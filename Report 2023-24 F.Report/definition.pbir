@@ -1,9 +1,0 @@
-{
-  "version": "4.0",
-  "datasetReference": {
-    "byPath": {
-      "path": "../Report 2023-24 F.SemanticModel"
-    },
-    "byConnection": null
-  }
-}
