@@ -1,0 +1,165 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 172.85416299999679,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 0,
+            "y": 409.5206732099868
+          },
+          "nodeIndex": "AMB_Bricks_Expance_Sheet",
+          "nodeLineageTag": "cda9d48b-efea-4726-883d-79b0141d6ec0",
+          "size": {
+            "height": 296,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 261.73111075355268,
+            "y": 412.98289471709211
+          },
+          "nodeIndex": "Kacha_Load_Sheet",
+          "nodeLineageTag": "92edcda6-5fa0-41d0-86c5-eb2f5bbc7c6b",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 8
+        },
+        {
+          "location": {
+            "x": 550.18488860284208,
+            "y": 410.38622858676314
+          },
+          "nodeIndex": "Others_sales",
+          "nodeLineageTag": "31c36b3a-4e45-461d-81b9-7c354b0cca34",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 1131.5462221507105,
+            "y": 407.5206732099868
+          },
+          "nodeIndex": "Vata_Sales",
+          "nodeLineageTag": "6813c15b-261d-4eeb-9c78-eb1fd25f2182",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 831.95799967819733,
+            "y": 402.71400547064468
+          },
+          "nodeIndex": "Unload_table",
+          "nodeLineageTag": "8a679aef-f85b-4f34-8d8a-a8c860719bc2",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 1618.674537978186,
+            "y": 578.31702037007153
+          },
+          "nodeIndex": "Date",
+          "nodeLineageTag": "19d73e2f-9c30-497b-8454-919a1f7dadac",
+          "size": {
+            "height": 614.44012856186941,
+            "width": 234
+          },
+          "zIndex": 10
+        },
+        {
+          "location": {
+            "x": 1988,
+            "y": 0
+          },
+          "nodeIndex": "DateAutoTemplate",
+          "nodeLineageTag": "3d840d51-1cd0-4b62-adfb-11c3f09508c3",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 7
+        },
+        {
+          "location": {
+            "x": 2272,
+            "y": 486.70488254381848
+          },
+          "nodeIndex": "_A Measures",
+          "nodeLineageTag": "ed28e673-3563-47e1-a6f0-b80f9d949ec9",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 454.46547242569613,
+            "y": 860.59188920723147
+          },
+          "nodeIndex": "New_date",
+          "nodeLineageTag": "f0175d4b-9011-43c1-b174-30ffe35fde8a",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 9
+        },
+        {
+          "location": {
+            "x": 2556,
+            "y": 520.37857446597047
+          },
+          "nodeIndex": "Parameter",
+          "nodeLineageTag": "fbbdbf7d-8b92-4a75-a3e2-e494e0c90781",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 414.91796106188212,
+            "y": 132.40412340669423
+          },
+          "nodeIndex": "SD_name",
+          "nodeLineageTag": "874146f3-0f2e-429a-bab3-1b782d60afa0",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 56.447393005377663,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}
