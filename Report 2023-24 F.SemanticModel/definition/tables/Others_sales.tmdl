@@ -1,0 +1,80 @@
+table Others_sales
+	lineageTag: 31c36b3a-4e45-461d-81b9-7c354b0cca34
+
+	column Date
+		dataType: string
+		lineageTag: 81dbf062-03d6-43b9-a53f-e629c265f55a
+		summarizeBy: none
+		sourceColumn: Date
+
+		annotation SummarizationSetBy = Automatic
+
+	column Address
+		dataType: string
+		lineageTag: 6d5892eb-bc76-490a-8a2f-881dfa8424fe
+		summarizeBy: none
+		sourceColumn: Address
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Product Name'
+		dataType: string
+		lineageTag: 99ba83a7-01be-4bba-b4b2-bd7e81bac201
+		summarizeBy: none
+		sourceColumn: Product Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quantity
+		dataType: string
+		lineageTag: 8139b27d-f338-4fa2-8781-f6d0dcb89c91
+		summarizeBy: none
+		sourceColumn: Quantity
+
+		annotation SummarizationSetBy = Automatic
+
+	column Rate
+		dataType: string
+		lineageTag: 2327a0fe-cb35-4823-a15c-315f640a372a
+		summarizeBy: none
+		sourceColumn: Rate
+
+		annotation SummarizationSetBy = Automatic
+
+	column Price
+		dataType: string
+		lineageTag: 1bc509a7-a451-43c1-bab7-bd8070604e59
+		summarizeBy: none
+		sourceColumn: Price
+
+		annotation SummarizationSetBy = Automatic
+
+	column Discount
+		dataType: string
+		lineageTag: 7ee55f7e-e7c3-495d-ac52-cda7102fd915
+		summarizeBy: none
+		sourceColumn: Discount
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Final Amount'
+		dataType: string
+		lineageTag: 8053d9de-f2bf-47f8-a3c7-ed1c6e13fe64
+		summarizeBy: none
+		sourceColumn: Final Amount
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Others_sales = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("H:\_Portfolio Project Github\BrickField-Sales-Cost-Tracking-Dashboard\AMB_Vata23_24.xlsx"), null, true),
+				    Others_sales_Table = Source{[Item="Others_sales",Kind="Table"]}[Data],
+				    #"Changed Type" = Table.TransformColumnTypes(Others_sales_Table,{{"Date", type any}, {"Address", type any}, {"Product Name", type any}, {"Quantity", type any}, {"Rate", type any}, {"Price", type any}, {"Discount", type any}, {"Final Amount", type any}}),
+				    #"Filtered Rows" = Table.SelectRows(#"Changed Type", each ([Date] <> null))
+				in
+				    #"Filtered Rows"
+
+	annotation PBI_ResultType = Table
+

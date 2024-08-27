@@ -1,0 +1,25 @@
+table SD_name
+	lineageTag: 874146f3-0f2e-429a-bab3-1b782d60afa0
+
+	column Sardar_name
+		dataType: string
+		lineageTag: df7cf166-a200-45aa-a42a-c85bb86fb857
+		summarizeBy: none
+		sourceColumn: Sardar_name
+
+		annotation SummarizationSetBy = Automatic
+
+	partition SD_name = m
+		mode: import
+		source =
+				let
+				    Source = Kacha_Load_Sheet,
+				    #"Removed Other Columns" = Table.SelectColumns(Source,{"Sardar_name"}),
+				    #"Removed Duplicates" = Table.Distinct(#"Removed Other Columns")
+				in
+				    #"Removed Duplicates"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

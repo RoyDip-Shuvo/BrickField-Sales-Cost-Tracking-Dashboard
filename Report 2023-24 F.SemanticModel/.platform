@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Report 2023-24 F"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "b258470b-2efc-4d13-9f2c-fba125762581"
+  }
+}

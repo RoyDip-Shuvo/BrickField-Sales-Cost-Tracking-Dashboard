@@ -1,0 +1,129 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/1.1.0/schema.json",
+  "themeCollection": {
+    "baseTheme": {
+      "name": "CY21SU11",
+      "reportVersionAtImport": "5.29",
+      "type": "SharedResources"
+    }
+  },
+  "layoutOptimization": "None",
+  "objects": {
+    "section": [
+      {
+        "properties": {
+          "verticalAlignment": {
+            "expr": {
+              "Literal": {
+                "Value": "'Top'"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspacePane": [
+      {
+        "properties": {
+          "expanded": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "publicCustomVisuals": [
+    "ChicletSlicer1448559807354"
+  ],
+  "resourcePackages": [
+    {
+      "name": "RegisteredResources",
+      "type": "RegisteredResources",
+      "items": [
+        {
+          "name": "001-profit-growth6495568751328344.png",
+          "path": "001-profit-growth6495568751328344.png",
+          "type": "Image"
+        },
+        {
+          "name": "004-cost2431398351941736.png",
+          "path": "004-cost2431398351941736.png",
+          "type": "Image"
+        },
+        {
+          "name": "Bricks_Cost7977960631551955.png",
+          "path": "Bricks_Cost7977960631551955.png",
+          "type": "Image"
+        },
+        {
+          "name": "Bricks_Sales5774748659635618.png",
+          "path": "Bricks_Sales5774748659635618.png",
+          "type": "Image"
+        },
+        {
+          "name": "Excavator07653779558734208.png",
+          "path": "Excavator07653779558734208.png",
+          "type": "Image"
+        },
+        {
+          "name": "Official_cost8618407756204716.png",
+          "path": "Official_cost8618407756204716.png",
+          "type": "Image"
+        },
+        {
+          "name": "Sardar6846277487487062.png",
+          "path": "Sardar6846277487487062.png",
+          "type": "Image"
+        },
+        {
+          "name": "coal42347549098924997.png",
+          "path": "coal42347549098924997.png",
+          "type": "Image"
+        },
+        {
+          "name": "pb_background07382389342182782.jpg",
+          "path": "pb_background07382389342182782.jpg",
+          "type": "Image"
+        },
+        {
+          "name": "pb_background687881352801162.jpg",
+          "path": "pb_background687881352801162.jpg",
+          "type": "Image"
+        },
+        {
+          "name": "supervisor8978696347422439.png",
+          "path": "supervisor8978696347422439.png",
+          "type": "Image"
+        }
+      ]
+    },
+    {
+      "name": "SharedResources",
+      "type": "SharedResources",
+      "items": [
+        {
+          "name": "CY21SU11",
+          "path": "BaseThemes/CY21SU11.json",
+          "type": "BaseTheme"
+        }
+      ]
+    }
+  ],
+  "settings": {
+    "useStylableVisualContainerHeader": true,
+    "defaultDrillFilterOtherVisuals": true,
+    "allowChangeFilterTypes": true,
+    "useEnhancedTooltips": true
+  },
+  "slowDataSourceSettings": {
+    "isCrossHighlightingDisabled": false,
+    "isSlicerSelectionsButtonEnabled": false,
+    "isFilterSelectionsButtonEnabled": false,
+    "isFieldWellButtonEnabled": false,
+    "isApplyAllButtonEnabled": false
+  }
+}

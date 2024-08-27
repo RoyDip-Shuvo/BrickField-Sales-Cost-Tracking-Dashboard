@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Report 2023-24 F"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "103cec61-88cc-4fae-abea-36ecc1cf4ab2"
+  }
+}

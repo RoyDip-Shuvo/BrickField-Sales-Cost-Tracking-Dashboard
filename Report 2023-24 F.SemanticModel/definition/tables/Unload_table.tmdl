@@ -1,0 +1,56 @@
+table Unload_table
+	lineageTag: 8a679aef-f85b-4f34-8d8a-a8c860719bc2
+
+	column Date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 610276dc-a6c5-4822-8906-db3604e78d62
+		summarizeBy: none
+		sourceColumn: Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Sardar_Name
+		dataType: string
+		lineageTag: f1231d9f-121d-4b6a-bb95-61bbb6ed0cae
+		summarizeBy: none
+		sourceColumn: Sardar_Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column Attribute
+		dataType: string
+		lineageTag: 939bc138-40a5-41cc-9537-9efc7b1e5021
+		summarizeBy: none
+		sourceColumn: Attribute
+
+		annotation SummarizationSetBy = Automatic
+
+	column Value
+		dataType: int64
+		formatString: 0
+		lineageTag: 460dc47b-6d9a-46ad-b75f-43127e57dce8
+		summarizeBy: sum
+		sourceColumn: Value
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Unload_table = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("H:\_Portfolio Project Github\BrickField-Sales-Cost-Tracking-Dashboard\AMB_Vata23_24.xlsx"), null, true),
+				    Uuload_table_Table = Source{[Item="Unload_table",Kind="Table"]}[Data],
+				    #"Changed Type" = Table.TransformColumnTypes(Uuload_table_Table,{{"Date", type date}, {"Sardar_Name", type text}, {"NO_1", Int64.Type}, {"Picket", Int64.Type}, {"No_2", Int64.Type}, {"Kara", Int64.Type}, {"Goyra", Int64.Type}, {"No_3", Int64.Type}, {"Total", Int64.Type}}),
+				    #"Filtered Rows" = Table.SelectRows(#"Changed Type", each ([Sardar_Name] <> null)),
+				    #"Removed Columns" = Table.RemoveColumns(#"Filtered Rows",{"Total"}),
+				    #"Unpivoted Other Columns" = Table.UnpivotOtherColumns(#"Removed Columns", {"Date", "Sardar_Name"}, "Attribute", "Value"),
+				    #"Filtered Rows1" = Table.SelectRows(#"Unpivoted Other Columns", each ([Value] <> 0)),
+				    #"Changed Type1" = Table.TransformColumnTypes(#"Filtered Rows1",{{"Date", type date}})
+				in
+				    #"Changed Type1"
+
+	annotation PBI_ResultType = Table
+

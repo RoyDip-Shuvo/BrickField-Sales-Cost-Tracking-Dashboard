@@ -1,0 +1,56 @@
+table New_date
+	lineageTag: f0175d4b-9011-43c1-b174-30ffe35fde8a
+
+	column Date
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 21786d57-99ef-4811-8149-2cc20ab0c526
+		summarizeBy: none
+		isNameInferred
+		isDataTypeInferred
+		sourceColumn: [Date]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Month_no = MONTH(New_date[Date])
+		dataType: int64
+		formatString: 0
+		lineageTag: cd07bbf4-b403-4d16-80cb-d0e5c417c085
+		summarizeBy: sum
+		isDataTypeInferred
+
+		annotation SummarizationSetBy = Automatic
+
+	column Month_name = FORMAT(New_date[Date], "mmm")
+		dataType: string
+		lineageTag: c19588ef-efbc-46ef-a2b3-a9e85532bf5f
+		summarizeBy: none
+		isDataTypeInferred
+		sortByColumn: Fiscal_month
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fiscal_month = IF(New_date[Month_no]>10, New_date[Month_no]-10, New_date[Month_no]+10)
+		dataType: int64
+		formatString: 0
+		lineageTag: 3255f383-75be-4d8f-a018-4af039110237
+		summarizeBy: sum
+		isDataTypeInferred
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year = YEAR(New_date[Date])
+		dataType: int64
+		formatString: 0
+		lineageTag: c48f2463-2757-4ffd-8948-a85476f451e3
+		summarizeBy: sum
+		isDataTypeInferred
+
+		annotation SummarizationSetBy = Automatic
+
+	partition New_date = calculated
+		mode: import
+		source = CALENDARAUTO(10)
+
+	annotation PBI_Id = 420b9bbd418147faaf31146894dd767d
+

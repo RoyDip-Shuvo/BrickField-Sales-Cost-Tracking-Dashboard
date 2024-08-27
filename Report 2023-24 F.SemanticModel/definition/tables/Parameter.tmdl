@@ -1,0 +1,55 @@
+table Parameter
+	lineageTag: fbbdbf7d-8b92-4a75-a3e2-e494e0c90781
+
+	column Parameter
+		dataType: string
+		lineageTag: f77a7374-be26-44b1-95a6-a54c49c98f4b
+		summarizeBy: none
+		isDataTypeInferred
+		sourceColumn: [Value1]
+		sortByColumn: 'Parameter Order'
+
+		relatedColumnDetails
+			groupByColumn: 'Parameter Fields'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parameter Fields'
+		dataType: string
+		isHidden
+		lineageTag: 5034b9c4-a7dc-4aaa-a4a7-edc81ac143f3
+		summarizeBy: none
+		isDataTypeInferred
+		sourceColumn: [Value2]
+		sortByColumn: 'Parameter Order'
+
+		extendedProperty ParameterMetadata =
+				{
+				  "kind": 2,
+				  "version": 3
+				}
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parameter Order'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: cbb83e81-502b-49b4-abaf-a3b1d9f5fc53
+		summarizeBy: sum
+		isDataTypeInferred
+		sourceColumn: [Value3]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Parameter = calculated
+		mode: import
+		source =
+				{
+				    ("Expense", NAMEOF('_A Measures'[Total Expence]), 0),
+				    ("Sales", NAMEOF('_A Measures'[Total_Sales]), 1),
+				    ("Production", NAMEOF('_A Measures'[Total_Production]), 2)
+				}
+
+	annotation PBI_Id = ed9b1cc66c9f4a15a1147fa51de5b842
+

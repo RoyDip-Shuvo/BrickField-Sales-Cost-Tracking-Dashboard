@@ -1,0 +1,100 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/1.1.0/schema.json",
+  "name": "ReportSection",
+  "displayName": "Final Report",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "pageBinding": {
+    "name": "Pod",
+    "type": "Default",
+    "parameters": [],
+    "referenceScope": "CrossReport"
+  },
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "image": {
+            "image": {
+              "name": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'pb background.jpg'"
+                  }
+                }
+              },
+              "url": {
+                "expr": {
+                  "ResourcePackageItem": {
+                    "PackageName": "RegisteredResources",
+                    "PackageType": 1,
+                    "ItemName": "pb_background07382389342182782.jpg"
+                  }
+                }
+              },
+              "scaling": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'Fit'"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "15D"
+              }
+            }
+          },
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "ThemeDataColor": {
+                    "ColorId": 4,
+                    "Percent": 0.4
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visualInteractions": [
+    {
+      "source": "14c6143d2cf891a6856a",
+      "target": "9b1a8f2f2320ea39d2fc",
+      "type": "NoFilter"
+    },
+    {
+      "source": "14c6143d2cf891a6856a",
+      "target": "5597406b09d0d2e37e01",
+      "type": "NoFilter"
+    },
+    {
+      "source": "14c6143d2cf891a6856a",
+      "target": "6b39fbe934be5ab1879c",
+      "type": "NoFilter"
+    },
+    {
+      "source": "14c6143d2cf891a6856a",
+      "target": "3a7cf845593f2f007a8e",
+      "type": "NoFilter"
+    },
+    {
+      "source": "14c6143d2cf891a6856a",
+      "target": "723b97145f60d2f8358e",
+      "type": "NoFilter"
+    },
+    {
+      "source": "14c6143d2cf891a6856a",
+      "target": "0ab351e4df88e6cc3892",
+      "type": "NoFilter"
+    }
+  ]
+}

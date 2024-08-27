@@ -1,0 +1,146 @@
+table Vata_Sales
+	lineageTag: 6813c15b-261d-4eeb-9c78-eb1fd25f2182
+
+	column 'Money Receipt No'
+		dataType: int64
+		formatString: 0
+		lineageTag: 40d7f94a-83fc-4ef5-b5b4-e530f93ef8dc
+		summarizeBy: sum
+		sourceColumn: Money Receipt No
+
+		annotation SummarizationSetBy = Automatic
+
+	column Date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: b705b929-6128-40bc-a369-864eb28b6275
+		summarizeBy: none
+		sourceColumn: Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Address
+		dataType: string
+		lineageTag: 8290f495-85fc-4a81-9de0-3dfd2ccbffd8
+		summarizeBy: none
+		sourceColumn: Address
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Product Name'
+		dataType: string
+		lineageTag: bed62403-a52d-4cfa-8d06-3e9ecd978f80
+		summarizeBy: none
+		sourceColumn: Product Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Ref Unit'
+		dataType: string
+		lineageTag: 80cc22c0-9290-4023-87be-4986ae867a68
+		summarizeBy: none
+		sourceColumn: Ref Unit
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quantity
+		dataType: int64
+		formatString: 0
+		lineageTag: c9302a75-85a6-4213-9c81-d53c19f922f3
+		summarizeBy: sum
+		sourceColumn: Quantity
+
+		annotation SummarizationSetBy = Automatic
+
+	column Rate
+		dataType: double
+		lineageTag: 370932a0-fa15-459e-8de6-02cf378d2a20
+		summarizeBy: sum
+		sourceColumn: Rate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Actual Rate'
+		dataType: double
+		lineageTag: dbb8af6f-57ad-453f-8ea4-953d353a9bb5
+		summarizeBy: sum
+		sourceColumn: Actual Rate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Actual Quantity'
+		dataType: int64
+		formatString: 0
+		lineageTag: 6ba821d0-1235-4538-8324-7753aa25d00d
+		summarizeBy: sum
+		sourceColumn: Actual Quantity
+
+		annotation SummarizationSetBy = Automatic
+
+	column Price
+		dataType: double
+		lineageTag: 5438733c-ff87-4f86-981e-a0ccc5c2a51e
+		summarizeBy: sum
+		sourceColumn: Price
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Discount
+		dataType: int64
+		formatString: 0
+		lineageTag: 710dd379-ff49-4cd4-9672-c0738a016353
+		summarizeBy: sum
+		sourceColumn: Discount
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Final Price'
+		dataType: double
+		lineageTag: 92511df6-127e-481d-9101-b0b14b4587d7
+		summarizeBy: sum
+		sourceColumn: Final Price
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Remarks
+		dataType: string
+		lineageTag: cf0d2d67-46e4-4610-a4fc-5d566df58753
+		summarizeBy: none
+		sourceColumn: Remarks
+
+		annotation SummarizationSetBy = Automatic
+
+	column Category
+		dataType: string
+		lineageTag: 478e980b-6c1a-4ecd-8ea5-79e5aed2732f
+		summarizeBy: none
+		sourceColumn: Category
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Vata_Sales = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("H:\_Portfolio Project Github\BrickField-Sales-Cost-Tracking-Dashboard\AMB_Vata23_24.xlsx"), null, true),
+				    Vata_Sales_Table = Source{[Item="Vata_Sales",Kind="Table"]}[Data],
+				    #"Changed Type" = Table.TransformColumnTypes(Vata_Sales_Table,{{"Money Receipt No", Int64.Type}, {"Date", type date}, {"Address", type text}, {"Product Name", type text}, {"Ref Unit", type text}, {"Quantity", Int64.Type}, {"Rate", type number}, {"Actual Rate", type number}, {"Actual Quantity", Int64.Type}, {"Price", type number}, {"Discount", Int64.Type}, {"Final Price", type number}, {"Remarks", type any}, {"Category", type text}}),
+				    #"Trimmed Text" = Table.TransformColumns(#"Changed Type",{{"Product Name", Text.Trim, type text}}),
+				    #"Changed Type1" = Table.TransformColumnTypes(#"Trimmed Text",{{"Date", type date}})
+				in
+				    #"Changed Type1"
+
+	annotation PBI_ResultType = Table
+
