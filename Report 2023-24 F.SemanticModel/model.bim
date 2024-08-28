@@ -6189,16 +6189,6 @@
                       "Type": "Noun",
                       "Weight": 0.582
                     }
-                  },
-                  {
-                    "Category": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
-                    }
                   }
                 ]
               },
@@ -6304,6 +6294,122 @@
                 "Visibility": {
                   "Value": "Hidden"
                 }
+              },
+              "unload_table.sort": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Unload_table",
+                    "ConceptualProperty": "Sort"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "sort": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "genus": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "species": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "variety": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "nature": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "kind": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "class": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "type": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "ilk": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "person": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.466
+                    }
+                  },
+                  {
+                    "character": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.452
+                    }
+                  }
+                ]
               },
               "unload_table.value": {
                 "Definition": {
@@ -7281,6 +7387,122 @@
                       "State": "Suggested",
                       "Type": "Noun",
                       "Weight": 0.485
+                    }
+                  }
+                ]
+              },
+              "v_A_Measures_a_measures.kacha_load_loss": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_A Measures",
+                    "ConceptualProperty": "Kacha Load Loss"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "kacha load loss": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "kacha load injury": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.508
+                    }
+                  },
+                  {
+                    "kacha load forfeiture": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.508
+                    }
+                  },
+                  {
+                    "kacha load damage": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "kacha load harm": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "kacha load cost": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "kacha load hurt": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "kacha load failure": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.482
+                    }
+                  },
+                  {
+                    "kacha load defeat": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.468
+                    }
+                  },
+                  {
+                    "kacha load beating": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.468
+                    }
+                  },
+                  {
+                    "kacha load thrashing": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.468
                     }
                   }
                 ]
@@ -10311,6 +10533,122 @@
                     }
                   }
                 ]
+              },
+              "vata_sale.sort": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Vata_Sales",
+                    "ConceptualProperty": "Sort"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "sort": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "genus": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "species": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "variety": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "nature": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "kind": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "class": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "type": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "ilk": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "person": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.466
+                    }
+                  },
+                  {
+                    "character": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.452
+                    }
+                  }
+                ]
               }
             },
             "Language": "en-US",
@@ -12167,6 +12505,39 @@
                 },
                 "State": "Generated"
               },
+              "kacha_load_sheet_has_v_A_Measures_a_measures_kacha_load_loss": {
+                "Binding": {
+                  "ConceptualEntity": "Kacha_Load_Sheet"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "v_A_Measures_a_measures.kacha_load_loss"
+                      },
+                      "Subject": {
+                        "Role": "kacha_load_sheet"
+                      }
+                    },
+                    "ID": "kacha_load_sheets_have_kacha_load_loss",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "kacha_load_sheet": {
+                    "Target": {
+                      "Entity": "kacha_load_sheet"
+                    }
+                  },
+                  "v_A_Measures_a_measures.kacha_load_loss": {
+                    "Target": {
+                      "Entity": "v_A_Measures_a_measures.kacha_load_loss"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "kacha_load_sheet_has_v_A_Measures_a_measures_kacha_production": {
                 "Binding": {
                   "ConceptualEntity": "Kacha_Load_Sheet"
@@ -13076,6 +13447,39 @@
                 },
                 "State": "Generated"
               },
+              "unload_table_has_sort": {
+                "Binding": {
+                  "ConceptualEntity": "Unload_table"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "unload_table.sort"
+                      },
+                      "Subject": {
+                        "Role": "unload_table"
+                      }
+                    },
+                    "ID": "unload_table_have_sorts",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "unload_table": {
+                    "Target": {
+                      "Entity": "unload_table"
+                    }
+                  },
+                  "unload_table.sort": {
+                    "Target": {
+                      "Entity": "unload_table.sort"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "unload_table_has_v_A_Measures_a_measures_AVG_production_rate": {
                 "Binding": {
                   "ConceptualEntity": "Unload_table"
@@ -13941,6 +14345,39 @@
                 },
                 "State": "Generated"
               },
+              "vata_sale_has_sort": {
+                "Binding": {
+                  "ConceptualEntity": "Vata_Sales"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "vata_sale.sort"
+                      },
+                      "Subject": {
+                        "Role": "vata_sale"
+                      }
+                    },
+                    "ID": "vata_sales_have_sorts",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "vata_sale": {
+                    "Target": {
+                      "Entity": "vata_sale"
+                    }
+                  },
+                  "vata_sale.sort": {
+                    "Target": {
+                      "Entity": "vata_sale.sort"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "vata_sale_has_v_A_Measures_a_measures_AVG_sales_rate": {
                 "Binding": {
                   "ConceptualEntity": "Vata_Sales"
@@ -14480,7 +14917,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Source = Excel.Workbook(File.Contents(\"C:\\Users\\WIN-10\\Downloads\\AMB_Vata23_24 (4).xlsx\"), null, true),",
+                "    Source = Excel.Workbook(File.Contents(\"E:\\aa Dip Work\\Vata Work\\BrickField-Sales-Cost-Tracking-Dashboard\\AMB_Vata23_24.xlsx\"), null, true),",
                 "    AMB_Bricks_Expance_Sheet_Table = Source{[Item=\"AMB_Bricks_Expance_Sheet\",Kind=\"Table\"]}[Data],",
                 "    #\"Changed Type\" = Table.TransformColumnTypes(AMB_Bricks_Expance_Sheet_Table,{{\"Date\", type date}, {\"Receipt No\", Int64.Type}, {\"Acc_Head\", type text}, {\"Sub_Head\", type text}, {\"Payment_for\", type any}, {\"Payment To\", type any}, {\"Quantity\", type any}, {\"Amount\", type any}, {\"Remarks\", type any}}),",
                 "    #\"Filtered Rows\" = Table.SelectRows(#\"Changed Type\", each ([Amount] <> null)),",
@@ -14586,7 +15023,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Source = Excel.Workbook(File.Contents(\"C:\\Users\\WIN-10\\Downloads\\AMB_Vata23_24 (4).xlsx\"), null, true),",
+                "    Source = Excel.Workbook(File.Contents(\"E:\\aa Dip Work\\Vata Work\\BrickField-Sales-Cost-Tracking-Dashboard\\AMB_Vata23_24.xlsx\"), null, true),",
                 "    Kacha_Load_Sheet_Table = Source{[Item=\"Kacha_Load_Sheet\",Kind=\"Table\"]}[Data],",
                 "    #\"Changed Type\" = Table.TransformColumnTypes(Kacha_Load_Sheet_Table,{{\"Date\", type date}, {\"Production_Category\", type text}, {\"Sardar_name\", type text}, {\"Production_Amount\", Int64.Type}, {\"Remarks\", type any}})",
                 "in",
@@ -14723,7 +15160,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Source = Excel.Workbook(File.Contents(\"C:\\Users\\WIN-10\\Downloads\\AMB_Vata23_24 (4).xlsx\"), null, true),",
+                "    Source = Excel.Workbook(File.Contents(\"E:\\aa Dip Work\\Vata Work\\BrickField-Sales-Cost-Tracking-Dashboard\\AMB_Vata23_24.xlsx\"), null, true),",
                 "    Others_sales_Table = Source{[Item=\"Others_sales\",Kind=\"Table\"]}[Data],",
                 "    #\"Changed Type\" = Table.TransformColumnTypes(Others_sales_Table,{{\"Date\", type any}, {\"Address\", type any}, {\"Product Name\", type any}, {\"Quantity\", type any}, {\"Rate\", type any}, {\"Price\", type any}, {\"Discount\", type any}, {\"Final Amount\", type any}}),",
                 "    #\"Filtered Rows\" = Table.SelectRows(#\"Changed Type\", each ([Date] <> null))",
@@ -14741,6 +15178,10 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
           }
         ],
         "columns": [
@@ -14783,8 +15224,14 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "SortByColumn"
+              }
+            ],
             "dataType": "string",
             "lineageTag": "939bc138-40a5-41cc-9537-9efc7b1e5021",
+            "sortByColumn": "Sort",
             "sourceColumn": "Product Category",
             "summarizeBy": "none"
           },
@@ -14801,6 +15248,23 @@
             "lineageTag": "460dc47b-6d9a-46ad-b75f-43127e57dce8",
             "sourceColumn": "Value",
             "summarizeBy": "sum"
+          },
+          {
+            "name": "Sort",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "c9b461ee-139c-403b-b063-a6120395230e",
+            "sourceColumn": "Sort",
+            "summarizeBy": "sum"
           }
         ],
         "lineageTag": "8a679aef-f85b-4f34-8d8a-a8c860719bc2",
@@ -14811,17 +15275,20 @@
             "source": {
               "expression": [
                 "let",
-                "    Source = Excel.Workbook(File.Contents(\"C:\\Users\\WIN-10\\Downloads\\AMB_Vata23_24 (4).xlsx\"), null, true),",
+                "    Source = Excel.Workbook(File.Contents(\"E:\\aa Dip Work\\Vata Work\\BrickField-Sales-Cost-Tracking-Dashboard\\AMB_Vata23_24.xlsx\"), null, true),",
                 "    Uuload_table_Table = Source{[Item=\"Unload_table\",Kind=\"Table\"]}[Data],",
-                "    #\"Changed Type\" = Table.TransformColumnTypes(Uuload_table_Table,{{\"Date\", type date}, {\"Sardar_Name\", type text}, {\"NO_1\", Int64.Type}, {\"Picket\", Int64.Type}, {\"No_2\", Int64.Type}, {\"Kara\", Int64.Type}, {\"Goyra\", Int64.Type}, {\"No_3\", Int64.Type}, {\"Total\", Int64.Type}}),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(Uuload_table_Table,{{\"Date\", type date}, {\"Sardar_Name\", type text}, {\"No_1\", Int64.Type}, {\"Picket\", Int64.Type}, {\"No_2\", Int64.Type}, {\"Kara\", Int64.Type}, {\"Goyra\", Int64.Type}, {\"No_3\", Int64.Type}, {\"Total\", Int64.Type}}),",
                 "    #\"Filtered Rows\" = Table.SelectRows(#\"Changed Type\", each ([Sardar_Name] <> null)),",
                 "    #\"Removed Columns\" = Table.RemoveColumns(#\"Filtered Rows\",{\"Total\"}),",
                 "    #\"Unpivoted Other Columns\" = Table.UnpivotOtherColumns(#\"Removed Columns\", {\"Date\", \"Sardar_Name\"}, \"Attribute\", \"Value\"),",
                 "    #\"Filtered Rows1\" = Table.SelectRows(#\"Unpivoted Other Columns\", each ([Value] <> 0)),",
                 "    #\"Changed Type1\" = Table.TransformColumnTypes(#\"Filtered Rows1\",{{\"Date\", type date}}),",
-                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Changed Type1\",{{\"Attribute\", \"Product Category\"}})",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Changed Type1\",{{\"Attribute\", \"Product Category\"}}),",
+                "    #\"Added Conditional Column\" = Table.AddColumn(#\"Renamed Columns\", \"Custom\", each if [Product Category] = \"No_1\" then 1 else if [Product Category] = \"Picket\" then 2 else if [Product Category] = \"No_2\" then 3 else if [Product Category] = \"Kara\" then 4 else if [Product Category] = \"No_3\" then 5 else if [Product Category] = \"Goyra\" then 6 else null, type number),",
+                "    #\"Filtered Rows2\" = Table.SelectRows(#\"Added Conditional Column\", each true),",
+                "    #\"Renamed Columns1\" = Table.RenameColumns(#\"Filtered Rows2\",{{\"Custom\", \"Sort\"}})",
                 "in",
-                "    #\"Renamed Columns\""
+                "    #\"Renamed Columns1\""
               ],
               "type": "m"
             }
@@ -15046,7 +15513,21 @@
             ],
             "dataType": "string",
             "lineageTag": "478e980b-6c1a-4ecd-8ea5-79e5aed2732f",
+            "sortByColumn": "Sort",
             "sourceColumn": "Category",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Sort",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "56a45cf4-e125-4578-91af-e120d8476a8a",
+            "sourceColumn": "Sort",
             "summarizeBy": "none"
           }
         ],
@@ -15058,7 +15539,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Source = Excel.Workbook(File.Contents(\"C:\\Users\\WIN-10\\Downloads\\AMB_Vata23_24 (4).xlsx\"), null, true),",
+                "    Source = Excel.Workbook(File.Contents(\"E:\\aa Dip Work\\Vata Work\\BrickField-Sales-Cost-Tracking-Dashboard\\AMB_Vata23_24.xlsx\"), null, true),",
                 "    Vata_Sales_Table = Source{[Item=\"Vata_Sales\",Kind=\"Table\"]}[Data],",
                 "    #\"Changed Type\" = Table.TransformColumnTypes(Vata_Sales_Table,{{\"Money Receipt No\", Int64.Type}, {\"Date\", type date}, {\"Address\", type text}, {\"Product Name\", type text}, {\"Ref Unit\", type text}, {\"Quantity\", Int64.Type}, {\"Rate\", type number}, {\"Actual Rate\", type number}, {\"Actual Quantity\", Int64.Type}, {\"Price\", type number}, {\"Discount\", Int64.Type}, {\"Final Price\", type number}, {\"Remarks\", type any}, {\"Category\", type text}}),",
                 "    #\"Trimmed Text\" = Table.TransformColumns(#\"Changed Type\",{{\"Product Name\", Text.Trim, type text}}),",
@@ -15989,9 +16470,9 @@
             "name": "Unload %",
             "expression": [
               "",
-              "Var unload = [Final Production]",
-              "Var Total_unload = CALCULATE([Final Production], ALLSELECTED(Unload_table[Product Category]))",
-              "VAR Result = DIVIDE(unload, Total_unload,0)",
+              "VAR unload = [Final Production]",
+              "VAR Total_unload = CALCULATE([Final Production], ALL(Unload_table))",
+              "VAR Result = DIVIDE(unload, Total_unload, 0)",
               "RETURN",
               "Result"
             ],
@@ -16246,6 +16727,12 @@
             ],
             "expression": "DIVIDE([Total Unload expense], [Final Production], 0) *1000",
             "lineageTag": "12c08c26-d893-4fa2-8178-87d0142fc358"
+          },
+          {
+            "name": "Kacha Load Loss",
+            "expression": "1-[Load %]",
+            "formatString": "0.00%;-0.00%;0.00%",
+            "lineageTag": "4429f49b-7480-44aa-916f-d41840943408"
           }
         ],
         "partitions": [
