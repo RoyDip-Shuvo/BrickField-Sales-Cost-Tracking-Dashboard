@@ -8,7 +8,7 @@
       },
       {
         "name": "PBI_QueryOrder",
-        "value": "[\"AMB_Bricks_Expance_Sheet\",\"Kacha_Load_Sheet\",\"Others_sales\",\"Unload_table\",\"Vata_Sales\",\"_A Measures\",\"SD_name\"]"
+        "value": "[\"AMB_Bricks_Expance_Sheet\",\"Kacha_Load_Sheet\",\"Others_sales\",\"Unload_table\",\"Vata_Sales\",\"_A Measures\",\"SD_name\",\"Errors in Vata_Sales\"]"
       },
       {
         "name": "__PBI_TimeIntelligenceEnabled",
@@ -14666,6 +14666,41 @@
       "returnErrorValuesAsNull": true
     },
     "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "expressions": [
+      {
+        "name": "Errors in Vata_Sales",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "expression": [
+          "let",
+          "Source = Vata_Sales,",
+          "  #\"Detected Type Mismatches\" = let",
+          "    tableWithOnlyPrimitiveTypes = Table.SelectColumns(Source, Table.ColumnsOfType(Source, {type nullable number, type nullable text, type nullable logical, type nullable date, type nullable datetime, type nullable datetimezone, type nullable time, type nullable duration})),",
+          "    recordTypeFields = Type.RecordFields(Type.TableRow(Value.Type(tableWithOnlyPrimitiveTypes))),",
+          "    fieldNames = Record.FieldNames(recordTypeFields),",
+          "    fieldTypes = List.Transform(Record.ToList(recordTypeFields), each [Type]),",
+          "    pairs = List.Transform(List.Positions(fieldNames), (i) => {fieldNames{i}, (v) => if v = null or Value.Is(v, fieldTypes{i}) then v else error [Message = \"The type of the value does not match the type of the column.\", Detail = v], fieldTypes{i}})",
+          "in",
+          "    Table.TransformColumns(Source, pairs),",
+          "  #\"Added Index\" = Table.AddIndexColumn(#\"Detected Type Mismatches\", \"Row Number\" ,1),",
+          "  #\"Kept Errors\" = Table.SelectRowsWithErrors(#\"Added Index\", {\"Money Receipt No\", \"Date\", \"Address\", \"Product Name\", \"Ref Unit\", \"Quantity\", \"Rate\", \"Actual Rate\", \"Actual Quantity\", \"Price\", \"Discount\", \"Final Price\", \"Remarks\", \"Category\", \"Sort\"}),",
+          "  #\"Reordered Columns\" = Table.ReorderColumns(#\"Kept Errors\", {\"Row Number\", \"Money Receipt No\", \"Date\", \"Address\", \"Product Name\", \"Ref Unit\", \"Quantity\", \"Rate\", \"Actual Rate\", \"Actual Quantity\", \"Price\", \"Discount\", \"Final Price\", \"Remarks\", \"Category\", \"Sort\"})",
+          "in",
+          "  #\"Reordered Columns\""
+        ],
+        "kind": "m",
+        "lineageTag": "6e16231b-10c0-4ba1-9c6a-328eb4cde3b4",
+        "queryGroup": "Query Errors - 8/29/2024 5:52:20 PM"
+      }
+    ],
     "extendedProperties": [
       {
         "name": "SQLBI_BRAVO_ManageDatesConfiguration",
@@ -14706,6 +14741,18 @@
           "timeIntelligenceAvailable": true,
           "timeIntelligenceEnabled": true
         }
+      }
+    ],
+    "queryGroups": [
+      {
+        "annotations": [
+          {
+            "name": "PBI_QueryGroupOrder",
+            "value": "0"
+          }
+        ],
+        "description": "Errors in queries that were loaded on 8/29/2024 5:52:20 PM.",
+        "folder": "Query Errors - 8/29/2024 5:52:20 PM"
       }
     ],
     "relationships": [
@@ -14917,7 +14964,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Source = Excel.Workbook(File.Contents(\"E:\\aa Dip Work\\Vata Work\\BrickField-Sales-Cost-Tracking-Dashboard\\AMB_Vata23_24.xlsx\"), null, true),",
+                "    Source = Excel.Workbook(File.Contents(\"E:\\aa Dip Work\\_Vata Work\\BrickField-Sales-Cost-Tracking-Dashboard\\AMB_Vata23_24.xlsx\"), null, true),",
                 "    AMB_Bricks_Expance_Sheet_Table = Source{[Item=\"AMB_Bricks_Expance_Sheet\",Kind=\"Table\"]}[Data],",
                 "    #\"Changed Type\" = Table.TransformColumnTypes(AMB_Bricks_Expance_Sheet_Table,{{\"Date\", type date}, {\"Receipt No\", Int64.Type}, {\"Acc_Head\", type text}, {\"Sub_Head\", type text}, {\"Payment_for\", type any}, {\"Payment To\", type any}, {\"Quantity\", type any}, {\"Amount\", type any}, {\"Remarks\", type any}}),",
                 "    #\"Filtered Rows\" = Table.SelectRows(#\"Changed Type\", each ([Amount] <> null)),",
@@ -15023,7 +15070,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Source = Excel.Workbook(File.Contents(\"E:\\aa Dip Work\\Vata Work\\BrickField-Sales-Cost-Tracking-Dashboard\\AMB_Vata23_24.xlsx\"), null, true),",
+                "    Source = Excel.Workbook(File.Contents(\"E:\\aa Dip Work\\_Vata Work\\BrickField-Sales-Cost-Tracking-Dashboard\\AMB_Vata23_24.xlsx\"), null, true),",
                 "    Kacha_Load_Sheet_Table = Source{[Item=\"Kacha_Load_Sheet\",Kind=\"Table\"]}[Data],",
                 "    #\"Changed Type\" = Table.TransformColumnTypes(Kacha_Load_Sheet_Table,{{\"Date\", type date}, {\"Production_Category\", type text}, {\"Sardar_name\", type text}, {\"Production_Amount\", Int64.Type}, {\"Remarks\", type any}})",
                 "in",
@@ -15160,7 +15207,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Source = Excel.Workbook(File.Contents(\"E:\\aa Dip Work\\Vata Work\\BrickField-Sales-Cost-Tracking-Dashboard\\AMB_Vata23_24.xlsx\"), null, true),",
+                "    Source = Excel.Workbook(File.Contents(\"E:\\aa Dip Work\\_Vata Work\\BrickField-Sales-Cost-Tracking-Dashboard\\AMB_Vata23_24.xlsx\"), null, true),",
                 "    Others_sales_Table = Source{[Item=\"Others_sales\",Kind=\"Table\"]}[Data],",
                 "    #\"Changed Type\" = Table.TransformColumnTypes(Others_sales_Table,{{\"Date\", type any}, {\"Address\", type any}, {\"Product Name\", type any}, {\"Quantity\", type any}, {\"Rate\", type any}, {\"Price\", type any}, {\"Discount\", type any}, {\"Final Amount\", type any}}),",
                 "    #\"Filtered Rows\" = Table.SelectRows(#\"Changed Type\", each ([Date] <> null))",
@@ -15275,7 +15322,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Source = Excel.Workbook(File.Contents(\"E:\\aa Dip Work\\Vata Work\\BrickField-Sales-Cost-Tracking-Dashboard\\AMB_Vata23_24.xlsx\"), null, true),",
+                "    Source = Excel.Workbook(File.Contents(\"E:\\aa Dip Work\\_Vata Work\\BrickField-Sales-Cost-Tracking-Dashboard\\AMB_Vata23_24.xlsx\"), null, true),",
                 "    Uuload_table_Table = Source{[Item=\"Unload_table\",Kind=\"Table\"]}[Data],",
                 "    #\"Changed Type\" = Table.TransformColumnTypes(Uuload_table_Table,{{\"Date\", type date}, {\"Sardar_Name\", type text}, {\"No_1\", Int64.Type}, {\"Picket\", Int64.Type}, {\"No_2\", Int64.Type}, {\"Kara\", Int64.Type}, {\"Goyra\", Int64.Type}, {\"No_3\", Int64.Type}, {\"Total\", Int64.Type}}),",
                 "    #\"Filtered Rows\" = Table.SelectRows(#\"Changed Type\", each ([Sardar_Name] <> null)),",
@@ -15539,7 +15586,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Source = Excel.Workbook(File.Contents(\"E:\\aa Dip Work\\Vata Work\\BrickField-Sales-Cost-Tracking-Dashboard\\AMB_Vata23_24.xlsx\"), null, true),",
+                "    Source = Excel.Workbook(File.Contents(\"E:\\aa Dip Work\\_Vata Work\\BrickField-Sales-Cost-Tracking-Dashboard\\AMB_Vata23_24.xlsx\"), null, true),",
                 "    Vata_Sales_Table = Source{[Item=\"Vata_Sales\",Kind=\"Table\"]}[Data],",
                 "    #\"Changed Type\" = Table.TransformColumnTypes(Vata_Sales_Table,{{\"Money Receipt No\", Int64.Type}, {\"Date\", type date}, {\"Address\", type text}, {\"Product Name\", type text}, {\"Ref Unit\", type text}, {\"Quantity\", Int64.Type}, {\"Rate\", type number}, {\"Actual Rate\", type number}, {\"Actual Quantity\", Int64.Type}, {\"Price\", type number}, {\"Discount\", Int64.Type}, {\"Final Price\", type number}, {\"Remarks\", type any}, {\"Category\", type text}}),",
                 "    #\"Trimmed Text\" = Table.TransformColumns(#\"Changed Type\",{{\"Product Name\", Text.Trim, type text}}),",
