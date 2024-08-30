@@ -8745,7 +8745,7 @@
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "_A Measures",
-                    "ConceptualProperty": "Total Expence"
+                    "ConceptualProperty": "Total Expense"
                   }
                 },
                 "State": "Generated",
@@ -14964,7 +14964,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Source = Excel.Workbook(File.Contents(\"H:\\_Portfolio Project Github\\BrickField-Sales-Cost-Tracking-Dashboard\\AMB_Vata23_24.xlsx\"), null, true),",
+                "    Source = Excel.Workbook(File.Contents(\"E:\\aa Dip Work\\_Vata Work\\BrickField-Sales-Cost-Tracking-Dashboard\\AMB_Vata23_24.xlsx\"), null, true),",
                 "    AMB_Bricks_Expance_Sheet_Table = Source{[Item=\"AMB_Bricks_Expance_Sheet\",Kind=\"Table\"]}[Data],",
                 "    #\"Changed Type\" = Table.TransformColumnTypes(AMB_Bricks_Expance_Sheet_Table,{{\"Date\", type date}, {\"Receipt No\", Int64.Type}, {\"Acc_Head\", type text}, {\"Sub_Head\", type text}, {\"Payment_for\", type any}, {\"Payment To\", type any}, {\"Quantity\", type any}, {\"Amount\", type any}, {\"Remarks\", type any}}),",
                 "    #\"Filtered Rows\" = Table.SelectRows(#\"Changed Type\", each ([Amount] <> null)),",
@@ -15070,7 +15070,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Source = Excel.Workbook(File.Contents(\"H:\\_Portfolio Project Github\\BrickField-Sales-Cost-Tracking-Dashboard\\AMB_Vata23_24.xlsx\"), null, true),",
+                "    Source = Excel.Workbook(File.Contents(\"E:\\aa Dip Work\\_Vata Work\\BrickField-Sales-Cost-Tracking-Dashboard\\AMB_Vata23_24.xlsx\"), null, true),",
                 "    Kacha_Load_Sheet_Table = Source{[Item=\"Kacha_Load_Sheet\",Kind=\"Table\"]}[Data],",
                 "    #\"Changed Type\" = Table.TransformColumnTypes(Kacha_Load_Sheet_Table,{{\"Date\", type date}, {\"Production_Category\", type text}, {\"Sardar_name\", type text}, {\"Production_Amount\", Int64.Type}, {\"Remarks\", type any}})",
                 "in",
@@ -15207,7 +15207,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Source = Excel.Workbook(File.Contents(\"H:\\_Portfolio Project Github\\BrickField-Sales-Cost-Tracking-Dashboard\\AMB_Vata23_24.xlsx\"), null, true),",
+                "    Source = Excel.Workbook(File.Contents(\"E:\\aa Dip Work\\_Vata Work\\BrickField-Sales-Cost-Tracking-Dashboard\\AMB_Vata23_24.xlsx\"), null, true),",
                 "    Others_sales_Table = Source{[Item=\"Others_sales\",Kind=\"Table\"]}[Data],",
                 "    #\"Changed Type\" = Table.TransformColumnTypes(Others_sales_Table,{{\"Date\", type any}, {\"Address\", type any}, {\"Product Name\", type any}, {\"Quantity\", type any}, {\"Rate\", type any}, {\"Price\", type any}, {\"Discount\", type any}, {\"Final Amount\", type any}}),",
                 "    #\"Filtered Rows\" = Table.SelectRows(#\"Changed Type\", each ([Date] <> null))",
@@ -15322,7 +15322,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Source = Excel.Workbook(File.Contents(\"H:\\_Portfolio Project Github\\BrickField-Sales-Cost-Tracking-Dashboard\\AMB_Vata23_24.xlsx\"), null, true),",
+                "    Source = Excel.Workbook(File.Contents(\"E:\\aa Dip Work\\_Vata Work\\BrickField-Sales-Cost-Tracking-Dashboard\\AMB_Vata23_24.xlsx\"), null, true),",
                 "    Uuload_table_Table = Source{[Item=\"Unload_table\",Kind=\"Table\"]}[Data],",
                 "    #\"Changed Type\" = Table.TransformColumnTypes(Uuload_table_Table,{{\"Date\", type date}, {\"Sardar_Name\", type text}, {\"No_1\", Int64.Type}, {\"Picket\", Int64.Type}, {\"No_2\", Int64.Type}, {\"Kara\", Int64.Type}, {\"Goyra\", Int64.Type}, {\"No_3\", Int64.Type}, {\"Total\", Int64.Type}}),",
                 "    #\"Filtered Rows\" = Table.SelectRows(#\"Changed Type\", each ([Sardar_Name] <> null)),",
@@ -15586,7 +15586,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Source = Excel.Workbook(File.Contents(\"H:\\_Portfolio Project Github\\BrickField-Sales-Cost-Tracking-Dashboard\\AMB_Vata23_24.xlsx\"), null, true),",
+                "    Source = Excel.Workbook(File.Contents(\"E:\\aa Dip Work\\_Vata Work\\BrickField-Sales-Cost-Tracking-Dashboard\\AMB_Vata23_24.xlsx\"), null, true),",
                 "    Vata_Sales_Table = Source{[Item=\"Vata_Sales\",Kind=\"Table\"]}[Data],",
                 "    #\"Changed Type\" = Table.TransformColumnTypes(Vata_Sales_Table,{{\"Money Receipt No\", Int64.Type}, {\"Date\", type date}, {\"Address\", type text}, {\"Product Name\", type text}, {\"Ref Unit\", type text}, {\"Quantity\", Int64.Type}, {\"Rate\", type number}, {\"Actual Rate\", type number}, {\"Actual Quantity\", Int64.Type}, {\"Price\", type number}, {\"Discount\", Int64.Type}, {\"Final Price\", type number}, {\"Remarks\", type any}, {\"Category\", type text}}),",
                 "    #\"Trimmed Text\" = Table.TransformColumns(#\"Changed Type\",{{\"Product Name\", Text.Trim, type text}}),",
@@ -16467,26 +16467,26 @@
         "lineageTag": "ed28e673-3563-47e1-a6f0-b80f9d949ec9",
         "measures": [
           {
-            "name": "Total Expence",
+            "name": "Total Expense",
             "expression": "SUM(AMB_Bricks_Expance_Sheet[Amount])",
             "formatString": "#,0",
             "lineageTag": "39ce5621-388f-4414-83a9-251ea160ef06"
           },
           {
             "name": "Coal_Expence",
-            "expression": "CALCULATE([Total Expence], AMB_Bricks_Expance_Sheet[Sub_Head]=\"Coal\")",
+            "expression": "CALCULATE([Total Expense], AMB_Bricks_Expance_Sheet[Sub_Head]=\"Coal\")",
             "formatString": "\\$#,0;(\\$#,0);\\$#,0",
             "lineageTag": "208f025b-98cf-462a-87bb-07acca3d4d79"
           },
           {
             "name": "Sardar_Expence",
-            "expression": "CALCULATE([Total Expence], AMB_Bricks_Expance_Sheet[Acc_Head]= \"SD_Payment\")",
+            "expression": "CALCULATE([Total Expense], AMB_Bricks_Expance_Sheet[Acc_Head]= \"SD_Payment\")",
             "formatString": "#,0",
             "lineageTag": "6b9b2b72-8a6d-4521-95c1-3413fdbe59f7"
           },
           {
             "name": "Offical Cost",
-            "expression": "CALCULATE([Total Expence], AMB_Bricks_Expance_Sheet[Acc_Head]=\"Offical Cost\")",
+            "expression": "CALCULATE([Total Expense], AMB_Bricks_Expance_Sheet[Acc_Head]=\"Offical Cost\")",
             "formatString": "#,0",
             "lineageTag": "c7bdc014-0775-4076-8da2-4d9d6730494e"
           },
@@ -16504,7 +16504,7 @@
                 "value": "{\"isGeneralNumber\":true}"
               }
             ],
-            "expression": "[Total_Sales]- [Total Expence]",
+            "expression": "[Total_Sales]- [Total Expense]",
             "lineageTag": "7bce886d-6d1c-47d6-8c40-92cb624666f3"
           },
           {
@@ -16528,7 +16528,7 @@
           },
           {
             "name": "Xcavator_Expence",
-            "expression": "CALCULATE([Total Expence], AMB_Bricks_Expance_Sheet[Acc_Head]=\"Xcavator\")",
+            "expression": "CALCULATE([Total Expense], AMB_Bricks_Expance_Sheet[Acc_Head]=\"Xcavator\")",
             "formatString": "0",
             "lineageTag": "75b6336d-72e5-423d-9eca-1b7f6e8fd7ca"
           },
@@ -16561,7 +16561,7 @@
                 "value": "{\"isGeneralNumber\":true}"
               }
             ],
-            "expression": "DIVIDE([Total Expence],[Final Production],0)",
+            "expression": "DIVIDE([Total Expense],[Final Production],0)",
             "lineageTag": "cd29d833-48d3-4ea1-914b-49d320a4ed2e"
           },
           {
@@ -16585,7 +16585,7 @@
             "name": "YTD Expense",
             "expression": [
               "",
-              "CALCULATE( [Total Expence],",
+              "CALCULATE( [Total Expense],",
               "DATESYTD(New_date[Date],\"10-31\")",
               ")"
             ],
@@ -16659,7 +16659,7 @@
             "expression": [
               "",
               "CALCULATE(",
-              "    [Total Expence], ",
+              "    [Total Expense], ",
               "    DATESYTD(",
               "        SAMEPERIODLASTYEAR('Date'[Date])",
               "    )",
@@ -16684,7 +16684,7 @@
           },
           {
             "name": "Labour_Cost",
-            "expression": "CALCULATE([Total Expence], AMB_Bricks_Expance_Sheet[Acc_Head]=\"Labour\")",
+            "expression": "CALCULATE([Total Expense], AMB_Bricks_Expance_Sheet[Acc_Head]=\"Labour\")",
             "formatString": "#,0",
             "lineageTag": "1259a630-c016-4c82-abf1-6f1c476fb9ae"
           },
@@ -16708,7 +16708,7 @@
           },
           {
             "name": "Kacha Production Expense",
-            "expression": "CALCULATE([Total Expence], AMB_Bricks_Expance_Sheet[Sub_Head]=\"Kacha_production\")",
+            "expression": "CALCULATE([Total Expense], AMB_Bricks_Expance_Sheet[Sub_Head]=\"Kacha_production\")",
             "formatString": "\\$#,0;(\\$#,0);\\$#,0",
             "lineageTag": "bf9b3f67-e3c0-4956-98d0-f9a7e733bbc6"
           },
@@ -16748,7 +16748,7 @@
           },
           {
             "name": "Load Expense",
-            "expression": "CALCULATE([Total Expence], AMB_Bricks_Expance_Sheet[Sub_Head]=\"Load\")",
+            "expression": "CALCULATE([Total Expense], AMB_Bricks_Expance_Sheet[Sub_Head]=\"Load\")",
             "formatString": "0",
             "lineageTag": "ff8ffbfa-5eb1-427f-932e-f766660a781c"
           },
@@ -16760,7 +16760,7 @@
           },
           {
             "name": "Total Unload expense",
-            "expression": "CALCULATE([Total Expence], AMB_Bricks_Expance_Sheet[Sub_Head]=\"Unload\")",
+            "expression": "CALCULATE([Total Expense], AMB_Bricks_Expance_Sheet[Sub_Head]=\"Unload\")",
             "formatString": "0",
             "lineageTag": "221e5ff6-5144-424a-ae5c-595ba923afa7"
           },
@@ -16780,6 +16780,112 @@
             "expression": "1-[Load %]",
             "formatString": "0.00%;-0.00%;0.00%",
             "lineageTag": "4429f49b-7480-44aa-916f-d41840943408"
+          },
+          {
+            "name": "Z_Roling_AVG Expense",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": [
+              "",
+              "VAR Period = ",
+              "    DATESINPERIOD(",
+              "        New_date[Date],",
+              "        MAX(New_date[Date]),",
+              "        -2,",
+              "        MONTH",
+              "    )",
+              "",
+              "VAR Total_Expense =",
+              "    CALCULATE(",
+              "        [Total Expense],",
+              "        Period",
+              "    )",
+              "",
+              "VAR Month_Count = ",
+              "    DISTINCTCOUNT(New_date[Fiscal_month])  -- Or New_date[Month_no]",
+              "",
+              "VAR Result =",
+              "    DIVIDE(Total_Expense, Month_Count)",
+              "",
+              "RETURN",
+              "    Result",
+              "",
+              ""
+            ],
+            "lineageTag": "09231870-c4e2-4fbc-bd2f-cbdbea363a43"
+          },
+          {
+            "name": "RollingAVG_Expense",
+            "expression": [
+              "",
+              "VAR NumDays = 14",
+              "VAR RollingSum = ",
+              "    CALCULATE([Total Expense], ",
+              "DATESINPERIOD(New_date[Date], LASTDATE(New_date[Date]), - NumDays, DAY))",
+              "RETURN",
+              "DIVIDE(RollingSum, NumDays)"
+            ],
+            "formatString": "#,0",
+            "lineageTag": "96851db5-991c-4bf0-8b67-0daa167425b2"
+          },
+          {
+            "name": "AVG Expense",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "expression": "AVERAGEx(AMB_Bricks_Expance_Sheet, AMB_Bricks_Expance_Sheet[Amount])",
+            "isHidden": true,
+            "lineageTag": "af882de5-3ba7-4de2-99ff-f0eda14f23eb"
+          },
+          {
+            "name": "RollingAVG_Sales",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": [
+              "",
+              "VAR NumDays = 14",
+              "VAR RollingSum = ",
+              "    CALCULATE([Total_Sales], ",
+              "DATESINPERIOD(New_date[Date], LASTDATE(New_date[Date]), - NumDays, DAY))",
+              "RETURN",
+              "DIVIDE(RollingSum, NumDays)"
+            ],
+            "lineageTag": "5a8099bb-b159-4796-8677-73c981ac9e61"
+          },
+          {
+            "name": "RollingAVG_Production",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": [
+              "",
+              "VAR NumDays = 14",
+              "VAR RollingSum = ",
+              "    CALCULATE([Final Production], ",
+              "DATESINPERIOD(New_date[Date], LASTDATE(New_date[Date]), - NumDays, DAY))",
+              "RETURN",
+              "DIVIDE(RollingSum, NumDays)"
+            ],
+            "lineageTag": "d44079f1-b362-4d7d-a970-0d089277acba"
           }
         ],
         "partitions": [
@@ -16872,6 +16978,26 @@
             "isDataTypeInferred": true,
             "lineageTag": "3255f383-75be-4d8f-a018-4af039110237",
             "summarizeBy": "sum",
+            "type": "calculated"
+          },
+          {
+            "name": "FirstDayOfWeek",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "expression": [
+              "",
+              "New_date[Date] - WEEKDAY(New_date[Date], 2) + 1",
+              ""
+            ],
+            "formatString": "Short Date",
+            "isDataTypeInferred": true,
+            "lineageTag": "f51c4539-6933-408a-84a8-8c179dbd4206",
+            "summarizeBy": "none",
             "type": "calculated"
           }
         ],
@@ -16975,7 +17101,7 @@
             "source": {
               "expression": [
                 "{",
-                "    (\"Expense\", NAMEOF('_A Measures'[Total Expence]), 0),",
+                "    (\"Expense\", NAMEOF('_A Measures'[Total Expense]), 0),",
                 "    (\"Sales\", NAMEOF('_A Measures'[Total_Sales]), 1),",
                 "    (\"Production\", NAMEOF('_A Measures'[Final Production]), 2)",
                 "}"
