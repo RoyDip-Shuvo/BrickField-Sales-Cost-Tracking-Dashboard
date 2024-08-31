@@ -19333,7 +19333,7 @@
             "expression": [
               "",
               "DIVIDE([Total_Sales],",
-              "    CALCULATE([Total_Sales], All(Vata_Sales)),0)"
+              "    CALCULATE([Total_Sales], ALLSELECTED(Vata_Sales)),0)"
             ],
             "formatString": "0.00%;-0.00%;0.00%",
             "lineageTag": "493f2e8b-fd50-4996-ae3f-72692dc960bd"
@@ -19618,7 +19618,7 @@
             "name": "RollingAVG_Expense",
             "expression": [
               "",
-              "VAR NumDays = 14",
+              "VAR NumDays = 7",
               "VAR RollingSum = ",
               "    CALCULATE([Total Expense], ",
               "DATESINPERIOD(New_date[Date], LASTDATE(New_date[Date]), - NumDays, DAY))",
@@ -19890,6 +19890,22 @@
             ],
             "isDataTypeInferred": true,
             "lineageTag": "374119af-5ea0-4c3c-8ad1-6f6dd8a096d8",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "First day of Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "expression": "STARTOFMONTH(New_date[Date])",
+            "formatString": "General Date",
+            "isDataTypeInferred": true,
+            "lineageTag": "c79b5afd-cafe-409c-9f9b-3069aea994cc",
             "summarizeBy": "none",
             "type": "calculated"
           }
