@@ -17756,7 +17756,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Source = Excel.Workbook(File.Contents(\"E:\\aa Dip Work\\_Vata Work\\BrickField-Sales-Cost-Tracking-Dashboard\\AMB_Vata23_24.xlsx\"), null, true),",
+                "    Source = Excel.Workbook(File.Contents(\"H:\\_Portfolio Project Github\\BrickField-Sales-Cost-Tracking-Dashboard\\AMB_Vata23_24.xlsx\"), null, true),",
                 "    AMB_Bricks_Expance_Sheet_Table = Source{[Item=\"AMB_Bricks_Expance_Sheet\",Kind=\"Table\"]}[Data],",
                 "    #\"Changed Type\" = Table.TransformColumnTypes(AMB_Bricks_Expance_Sheet_Table,{{\"Date\", type date}, {\"Receipt No\", Int64.Type}, {\"Acc_Head\", type text}, {\"Sub_Head\", type text}, {\"Payment_for\", type any}, {\"Payment To\", type any}, {\"Quantity\", type any}, {\"Amount\", type any}, {\"Remarks\", type any}}),",
                 "    #\"Filtered Rows\" = Table.SelectRows(#\"Changed Type\", each ([Amount] <> null)),",
@@ -17862,7 +17862,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Source = Excel.Workbook(File.Contents(\"E:\\aa Dip Work\\_Vata Work\\BrickField-Sales-Cost-Tracking-Dashboard\\AMB_Vata23_24.xlsx\"), null, true),",
+                "    Source = Excel.Workbook(File.Contents(\"H:\\_Portfolio Project Github\\BrickField-Sales-Cost-Tracking-Dashboard\\AMB_Vata23_24.xlsx\"), null, true),",
                 "    Kacha_Load_Sheet_Table = Source{[Item=\"Kacha_Load_Sheet\",Kind=\"Table\"]}[Data],",
                 "    #\"Changed Type\" = Table.TransformColumnTypes(Kacha_Load_Sheet_Table,{{\"Date\", type date}, {\"Production_Category\", type text}, {\"Sardar_name\", type text}, {\"Production_Amount\", Int64.Type}, {\"Remarks\", type any}})",
                 "in",
@@ -17999,7 +17999,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Source = Excel.Workbook(File.Contents(\"E:\\aa Dip Work\\_Vata Work\\BrickField-Sales-Cost-Tracking-Dashboard\\AMB_Vata23_24.xlsx\"), null, true),",
+                "    Source = Excel.Workbook(File.Contents(\"H:\\_Portfolio Project Github\\BrickField-Sales-Cost-Tracking-Dashboard\\AMB_Vata23_24.xlsx\"), null, true),",
                 "    Others_sales_Table = Source{[Item=\"Others_sales\",Kind=\"Table\"]}[Data],",
                 "    #\"Changed Type\" = Table.TransformColumnTypes(Others_sales_Table,{{\"Date\", type any}, {\"Address\", type any}, {\"Product Name\", type any}, {\"Quantity\", type any}, {\"Rate\", type any}, {\"Price\", type any}, {\"Discount\", type any}, {\"Final Amount\", type any}}),",
                 "    #\"Filtered Rows\" = Table.SelectRows(#\"Changed Type\", each ([Date] <> null))",
@@ -18114,7 +18114,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Source = Excel.Workbook(File.Contents(\"E:\\aa Dip Work\\_Vata Work\\BrickField-Sales-Cost-Tracking-Dashboard\\AMB_Vata23_24.xlsx\"), null, true),",
+                "    Source = Excel.Workbook(File.Contents(\"H:\\_Portfolio Project Github\\BrickField-Sales-Cost-Tracking-Dashboard\\AMB_Vata23_24.xlsx\"), null, true),",
                 "    Uuload_table_Table = Source{[Item=\"Unload_table\",Kind=\"Table\"]}[Data],",
                 "    #\"Changed Type\" = Table.TransformColumnTypes(Uuload_table_Table,{{\"Date\", type date}, {\"Sardar_Name\", type text}, {\"No_1\", Int64.Type}, {\"Picket\", Int64.Type}, {\"No_2\", Int64.Type}, {\"Kara\", Int64.Type}, {\"Goyra\", Int64.Type}, {\"No_3\", Int64.Type}, {\"Total\", Int64.Type}}),",
                 "    #\"Filtered Rows\" = Table.SelectRows(#\"Changed Type\", each ([Sardar_Name] <> null)),",
@@ -18382,7 +18382,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Source = Excel.Workbook(File.Contents(\"E:\\aa Dip Work\\_Vata Work\\BrickField-Sales-Cost-Tracking-Dashboard\\AMB_Vata23_24.xlsx\"), null, true),",
+                "    Source = Excel.Workbook(File.Contents(\"H:\\_Portfolio Project Github\\BrickField-Sales-Cost-Tracking-Dashboard\\AMB_Vata23_24.xlsx\"), null, true),",
                 "    Vata_Sales_Table = Source{[Item=\"Vata_Sales\",Kind=\"Table\"]}[Data],",
                 "    #\"Changed Type\" = Table.TransformColumnTypes(Vata_Sales_Table,{{\"Money Receipt No\", Int64.Type}, {\"Date\", type date}, {\"Address\", type text}, {\"Product Name\", type text}, {\"Ref Unit\", type text}, {\"Quantity\", Int64.Type}, {\"Rate\", type number}, {\"Actual Rate\", type number}, {\"Actual Quantity\", Int64.Type}, {\"Price\", type number}, {\"Discount\", Int64.Type}, {\"Final Price\", type number}, {\"Remarks\", type any}, {\"Category\", type text}}),",
                 "    #\"Trimmed Text\" = Table.TransformColumns(#\"Changed Type\",{{\"Product Name\", Text.Trim, type text}}),",
@@ -20021,6 +20021,121 @@
         ]
       },
       {
+        "name": "CY_PY_ParameterTable",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "eab4fb1901f44d4396485bd31de46306"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Metric",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "isDataTypeInferred": true,
+            "isNameInferred": true,
+            "lineageTag": "12fa8462-d7c6-499e-bf93-0e7e67fc4c63",
+            "sortByColumn": "ID",
+            "sourceColumn": "[Metric]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "ID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isDataTypeInferred": true,
+            "isNameInferred": true,
+            "lineageTag": "4666fa0d-f0eb-4297-8806-fd87d2d734c7",
+            "sourceColumn": "[ID]",
+            "summarizeBy": "count",
+            "type": "calculatedTableColumn"
+          }
+        ],
+        "lineageTag": "b33d48eb-1149-4885-97fa-61b381235dae",
+        "measures": [
+          {
+            "name": "CY_Value",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": [
+              "",
+              "VAR SelectedMetric = SELECTEDVALUE(CY_PY_ParameterTable[ID])",
+              "RETURN",
+              "    SWITCH(",
+              "        TRUE(),",
+              "        SelectedMetric = 0, [Total_Sales],      // Sales",
+              "        SelectedMetric = 1, [Total Expense],    // Expense ",
+              "        SelectedMetric = 2, [Final Production], // Production",
+              "        BLANK()  // Fallback if no selection is made",
+              "    )",
+              ""
+            ],
+            "lineageTag": "a2b8f889-8605-4006-abf9-79e9577803d0"
+          },
+          {
+            "name": "PY_Value",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": [
+              "",
+              "VAR SelectedMetric = SELECTEDVALUE(CY_PY_ParameterTable[ID])",
+              "RETURN",
+              "    SWITCH(",
+              "        TRUE(),",
+              "        SelectedMetric = 0, [PY Sales],      // Prior Year Sales",
+              "        SelectedMetric = 1, [PY Expense],    // Prior Year Expense",
+              "        SelectedMetric = 2, [PY Final Production], // Prior Year Production",
+              "        BLANK()  // Fallback if no selection is made",
+              "    )",
+              ""
+            ],
+            "lineageTag": "4908ce61-9c57-4b3e-b738-7f39f344ae13"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "CY_PY_ParameterTable",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "",
+                "DATATABLE(",
+                "    \"Metric\", STRING, \"ID\", INTEGER,",
+                "    {",
+                "        {\"Sales\", 0},",
+                "        {\"Expense\", 1},",
+                "        {\"Production\", 2}",
+                "    }",
+                ")",
+                ""
+              ],
+              "type": "calculated"
+            }
+          }
+        ]
+      },
+      {
         "name": "SD_Name",
         "annotations": [
           {
@@ -20065,120 +20180,6 @@
                 "    #\"Removed Duplicates\""
               ],
               "type": "m"
-            }
-          }
-        ]
-      },
-      {
-        "name": "CY_PY_ParameterTable",
-        "annotations": [
-          {
-            "name": "PBI_Id",
-            "value": "eab4fb1901f44d4396485bd31de46306"
-          }
-        ],
-        "columns": [
-          {
-            "name": "Metric",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "isDataTypeInferred": true,
-            "isNameInferred": true,
-            "lineageTag": "12fa8462-d7c6-499e-bf93-0e7e67fc4c63",
-            "sourceColumn": "[Metric]",
-            "summarizeBy": "none",
-            "type": "calculatedTableColumn"
-          },
-          {
-            "name": "ID",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "int64",
-            "formatString": "0",
-            "isDataTypeInferred": true,
-            "isNameInferred": true,
-            "lineageTag": "4666fa0d-f0eb-4297-8806-fd87d2d734c7",
-            "sourceColumn": "[ID]",
-            "summarizeBy": "count",
-            "type": "calculatedTableColumn"
-          }
-        ],
-        "lineageTag": "b33d48eb-1149-4885-97fa-61b381235dae",
-        "measures": [
-          {
-            "name": "CY_Value",
-            "annotations": [
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
-              }
-            ],
-            "expression": [
-              "",
-              "VAR SelectedMetric = SELECTEDVALUE(CY_PY_ParameterTable[ID])",
-              "RETURN",
-              "    SWITCH(",
-              "        TRUE(),",
-              "        SelectedMetric = 0, [Total Expense],    // Expense",
-              "        SelectedMetric = 1, [Total_Sales],      // Sales",
-              "        SelectedMetric = 2, [Final Production], // Production",
-              "        BLANK()  // Fallback if no selection is made",
-              "    )",
-              ""
-            ],
-            "lineageTag": "a2b8f889-8605-4006-abf9-79e9577803d0"
-          },
-          {
-            "name": "PY_Value",
-            "annotations": [
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
-              }
-            ],
-            "expression": [
-              "",
-              "VAR SelectedMetric = SELECTEDVALUE(CY_PY_ParameterTable[ID])",
-              "RETURN",
-              "    SWITCH(",
-              "        TRUE(),",
-              "        SelectedMetric = 0, [PY Expense],    // Prior Year Expense",
-              "        SelectedMetric = 1, [PY Sales],      // Prior Year Sales",
-              "        SelectedMetric = 2, [PY Final Production], // Prior Year Production",
-              "        BLANK()  // Fallback if no selection is made",
-              "    )",
-              ""
-            ],
-            "lineageTag": "4908ce61-9c57-4b3e-b738-7f39f344ae13"
-          }
-        ],
-        "partitions": [
-          {
-            "name": "CY_PY_ParameterTable",
-            "mode": "import",
-            "source": {
-              "expression": [
-                "",
-                "DATATABLE(",
-                "    \"Metric\", STRING, \"ID\", INTEGER,",
-                "    {",
-                "        {\"Expense\", 0},",
-                "        {\"Sales\", 1},",
-                "        {\"Production\", 2}",
-                "    }",
-                ")",
-                ""
-              ],
-              "type": "calculated"
             }
           }
         ]
