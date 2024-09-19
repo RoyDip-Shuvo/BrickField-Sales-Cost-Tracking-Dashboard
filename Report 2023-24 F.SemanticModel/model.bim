@@ -19764,6 +19764,17 @@
             "expression": "CALCULATE([Production Materials], SAMEPERIODLASTYEAR(New_date[Date]))",
             "formatString": "0",
             "lineageTag": "8abe3da6-2af3-44cf-b582-e396aba2c101"
+          },
+          {
+            "name": "PY 1K Kacha",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": "CALCULATE([Per 1K Kacha], SAMEPERIODLASTYEAR(New_date[Date]))",
+            "lineageTag": "b7dd0411-7510-4205-b4c4-8cc93a2919cd"
           }
         ],
         "partitions": [
