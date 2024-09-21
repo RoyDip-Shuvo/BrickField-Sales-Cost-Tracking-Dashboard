@@ -19125,7 +19125,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Source = Excel.Workbook(File.Contents(\"H:\\_Portfolio Project Github\\BrickField-Sales-Cost-Tracking-Dashboard\\AMB_Vata23_24.xlsx\"), null, true),",
+                "    Source = Excel.Workbook(File.Contents(\"E:\\aa Dip Work\\_Vata Work\\BrickField-Sales-Cost-Tracking-Dashboard\\AMB_Vata23_24.xlsx\"), null, true),",
                 "    AMB_Bricks_Expance_Sheet_Table = Source{[Item=\"AMB_Bricks_Expance_Sheet\",Kind=\"Table\"]}[Data],",
                 "    #\"Changed Type\" = Table.TransformColumnTypes(AMB_Bricks_Expance_Sheet_Table,{{\"Date\", type date}, {\"Receipt No\", Int64.Type}, {\"Acc_Head\", type text}, {\"Sub_Head\", type text}, {\"Payment_for\", type any}, {\"Payment To\", type any}, {\"Quantity\", type any}, {\"Amount\", type any}, {\"Remarks\", type any}}),",
                 "    #\"Filtered Rows\" = Table.SelectRows(#\"Changed Type\", each ([Amount] <> null)),",
@@ -19231,7 +19231,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Source = Excel.Workbook(File.Contents(\"H:\\_Portfolio Project Github\\BrickField-Sales-Cost-Tracking-Dashboard\\AMB_Vata23_24.xlsx\"), null, true),",
+                "    Source = Excel.Workbook(File.Contents(\"E:\\aa Dip Work\\_Vata Work\\BrickField-Sales-Cost-Tracking-Dashboard\\AMB_Vata23_24.xlsx\"), null, true),",
                 "    Kacha_Load_Sheet_Table = Source{[Item=\"Kacha_Load_Sheet\",Kind=\"Table\"]}[Data],",
                 "    #\"Changed Type\" = Table.TransformColumnTypes(Kacha_Load_Sheet_Table,{{\"Date\", type date}, {\"Production_Category\", type text}, {\"Sardar_name\", type text}, {\"Production_Amount\", Int64.Type}, {\"Remarks\", type any}})",
                 "in",
@@ -19368,7 +19368,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Source = Excel.Workbook(File.Contents(\"H:\\_Portfolio Project Github\\BrickField-Sales-Cost-Tracking-Dashboard\\AMB_Vata23_24.xlsx\"), null, true),",
+                "    Source = Excel.Workbook(File.Contents(\"E:\\aa Dip Work\\_Vata Work\\BrickField-Sales-Cost-Tracking-Dashboard\\AMB_Vata23_24.xlsx\"), null, true),",
                 "    Others_sales_Table = Source{[Item=\"Others_sales\",Kind=\"Table\"]}[Data],",
                 "    #\"Changed Type\" = Table.TransformColumnTypes(Others_sales_Table,{{\"Date\", type any}, {\"Address\", type any}, {\"Product Name\", type any}, {\"Quantity\", type any}, {\"Rate\", type any}, {\"Price\", type any}, {\"Discount\", type any}, {\"Final Amount\", type any}}),",
                 "    #\"Filtered Rows\" = Table.SelectRows(#\"Changed Type\", each ([Date] <> null))",
@@ -19483,7 +19483,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Source = Excel.Workbook(File.Contents(\"H:\\_Portfolio Project Github\\BrickField-Sales-Cost-Tracking-Dashboard\\AMB_Vata23_24.xlsx\"), null, true),",
+                "    Source = Excel.Workbook(File.Contents(\"E:\\aa Dip Work\\_Vata Work\\BrickField-Sales-Cost-Tracking-Dashboard\\AMB_Vata23_24.xlsx\"), null, true),",
                 "    Uuload_table_Table = Source{[Item=\"Unload_table\",Kind=\"Table\"]}[Data],",
                 "    #\"Changed Type\" = Table.TransformColumnTypes(Uuload_table_Table,{{\"Date\", type date}, {\"Sardar_Name\", type text}, {\"1no\", Int64.Type}, {\"Picket\", Int64.Type}, {\"2no\", Int64.Type}, {\"Kara\", Int64.Type}, {\"Goyra\", Int64.Type}, {\"3no\", Int64.Type}, {\"Total\", Int64.Type}}),",
                 "    #\"Filtered Rows\" = Table.SelectRows(#\"Changed Type\", each ([Sardar_Name] <> null)),",
@@ -19764,7 +19764,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Source = Excel.Workbook(File.Contents(\"H:\\_Portfolio Project Github\\BrickField-Sales-Cost-Tracking-Dashboard\\AMB_Vata23_24.xlsx\"), null, true),",
+                "    Source = Excel.Workbook(File.Contents(\"E:\\aa Dip Work\\_Vata Work\\BrickField-Sales-Cost-Tracking-Dashboard\\AMB_Vata23_24.xlsx\"), null, true),",
                 "    Vata_Sales_Table = Source{[Item=\"Vata_Sales\",Kind=\"Table\"]}[Data],",
                 "    #\"Changed Type\" = Table.TransformColumnTypes(Vata_Sales_Table,{{\"Money Receipt No\", Int64.Type}, {\"Date\", type date}, {\"Address\", type text}, {\"Product Name\", type text}, {\"Ref Unit\", type text}, {\"Quantity\", Int64.Type}, {\"Rate\", type number}, {\"Actual Rate\", type number}, {\"Actual Quantity\", Int64.Type}, {\"Price\", type number}, {\"Discount\", Int64.Type}, {\"Final Price\", type number}, {\"Remarks\", type any}, {\"Category\", type text}}),",
                 "    #\"Trimmed Text\" = Table.TransformColumns(#\"Changed Type\",{{\"Product Name\", Text.Trim, type text}}),",
@@ -21453,6 +21453,55 @@
         ]
       },
       {
+        "name": "SD_Name",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "SD Name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "95c1b625-d46c-430f-9bcd-c901ef1861b2",
+            "sourceColumn": "SD Name",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "fbda6058-de88-4759-b3a8-5f563060221c",
+        "partitions": [
+          {
+            "name": "SD_Name",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = AMB_Bricks_Expance_Sheet,",
+                "    #\"Filtered Rows\" = Table.SelectRows(Source, each ([Acc_Head] = \"SD_Payment\")),",
+                "    #\"Removed Other Columns\" = Table.SelectColumns(#\"Filtered Rows\",{\"Payment To\"}),",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Removed Other Columns\",{{\"Payment To\", \"SD Name\"}}),",
+                "    #\"Trimmed Text\" = Table.TransformColumns(#\"Renamed Columns\",{{\"SD Name\", Text.Trim, type text}}),",
+                "    #\"Removed Duplicates\" = Table.Distinct(#\"Trimmed Text\")",
+                "in",
+                "    #\"Removed Duplicates\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
         "name": "CY_PY_ParameterTable",
         "annotations": [
           {
@@ -21568,55 +21617,6 @@
         ]
       },
       {
-        "name": "SD_Name",
-        "annotations": [
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navigation"
-          },
-          {
-            "name": "PBI_ResultType",
-            "value": "Table"
-          }
-        ],
-        "columns": [
-          {
-            "name": "SD Name",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "95c1b625-d46c-430f-9bcd-c901ef1861b2",
-            "sourceColumn": "SD Name",
-            "summarizeBy": "none"
-          }
-        ],
-        "lineageTag": "fbda6058-de88-4759-b3a8-5f563060221c",
-        "partitions": [
-          {
-            "name": "SD_Name",
-            "mode": "import",
-            "source": {
-              "expression": [
-                "let",
-                "    Source = AMB_Bricks_Expance_Sheet,",
-                "    #\"Filtered Rows\" = Table.SelectRows(Source, each ([Acc_Head] = \"SD_Payment\")),",
-                "    #\"Removed Other Columns\" = Table.SelectColumns(#\"Filtered Rows\",{\"Payment To\"}),",
-                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Removed Other Columns\",{{\"Payment To\", \"SD Name\"}}),",
-                "    #\"Trimmed Text\" = Table.TransformColumns(#\"Renamed Columns\",{{\"SD Name\", Text.Trim, type text}}),",
-                "    #\"Removed Duplicates\" = Table.Distinct(#\"Trimmed Text\")",
-                "in",
-                "    #\"Removed Duplicates\""
-              ],
-              "type": "m"
-            }
-          }
-        ]
-      },
-      {
         "name": "Inventory_Num",
         "annotations": [
           {
@@ -21667,7 +21667,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Source = Excel.Workbook(File.Contents(\"H:\\_Portfolio Project Github\\BrickField-Sales-Cost-Tracking-Dashboard\\AMB_Vata23_24.xlsx\"), null, true),",
+                "    Source = Excel.Workbook(File.Contents(\"E:\\aa Dip Work\\_Vata Work\\BrickField-Sales-Cost-Tracking-Dashboard\\AMB_Vata23_24.xlsx\"), null, true),",
                 "    Inventory_Num_Table = Source{[Item=\"Inventory_Num\",Kind=\"Table\"]}[Data],",
                 "    #\"Changed Type\" = Table.TransformColumnTypes(Inventory_Num_Table,{{\"InventoryName\", type text}, {\"InventoryShort\", Int64.Type}})",
                 "in",
