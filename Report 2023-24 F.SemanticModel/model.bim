@@ -8,7 +8,7 @@
       },
       {
         "name": "PBI_QueryOrder",
-        "value": "[\"AMB_Bricks_Expance_Sheet\",\"Kacha_Load_Sheet\",\"Others_sales\",\"Unload_table\",\"Vata_Sales\",\"_A Measures\",\"SD_Name\"]"
+        "value": "[\"AMB_Bricks_Expance_Sheet\",\"Kacha_Load_Sheet\",\"Others_sales\",\"Unload_table\",\"Vata_Sales\",\"_A Measures\",\"SD_Name\",\"Inventory_Num\"]"
       },
       {
         "name": "__PBI_TimeIntelligenceEnabled",
@@ -4444,6 +4444,296 @@
                   "Value": "Hidden"
                 }
               },
+              "inventory_num": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Inventory_Num"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "inventory num": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "Inventory_Num": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "inventory number": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  }
+                ]
+              },
+              "inventory_num.inventory_name": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Inventory_Num",
+                    "ConceptualProperty": "InventoryName"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "inventory name": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "InventoryName": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "inventory": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "inventory nickname": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "inventory title": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "inventory label": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "inventory tag": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "portfolio": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "record": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "account": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "register": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "catalogue": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "catalog": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  }
+                ]
+              },
+              "inventory_num.inventory_short": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Inventory_Num",
+                    "ConceptualProperty": "InventoryShort"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "inventory short": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "InventoryShort": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "short": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "small": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "little": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "petite": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "squat": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "diminutive": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "brief": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.452
+                    }
+                  },
+                  {
+                    "quick": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.452
+                    }
+                  },
+                  {
+                    "rapid": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.452
+                    }
+                  },
+                  {
+                    "fleeting": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.452
+                    }
+                  },
+                  {
+                    "passing": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.452
+                    }
+                  }
+                ]
+              },
               "kacha_load_sheet": {
                 "Definition": {
                   "Binding": {
@@ -4986,6 +5276,39 @@
                       "State": "Suggested",
                       "Type": "Noun",
                       "Weight": 0.714
+                    }
+                  }
+                ]
+              },
+              "new_date.first_day_of_month": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "New_date",
+                    "ConceptualProperty": "First day of Month"
+                  }
+                },
+                "SemanticType": "Time",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "first day of month": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "first day": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "first day of mth": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.617
                     }
                   }
                 ]
@@ -6816,6 +7139,42 @@
                   }
                 ]
               },
+              "unload_table.inventory_num": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Unload_table",
+                    "ConceptualProperty": "Inventory_Num"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "inventory num": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "Inventory_Num": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "inventory number": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  }
+                ],
+                "Visibility": {
+                  "Value": "Hidden"
+                }
+              },
               "unload_table.sardar_name": {
                 "Definition": {
                   "Binding": {
@@ -6875,122 +7234,6 @@
                       "State": "Suggested",
                       "Type": "Noun",
                       "Weight": 0.727
-                    }
-                  }
-                ]
-              },
-              "unload_table.sort": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "Unload_table",
-                    "ConceptualProperty": "Sort"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "sort": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "genus": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.491
-                    }
-                  },
-                  {
-                    "species": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.491
-                    }
-                  },
-                  {
-                    "variety": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.491
-                    }
-                  },
-                  {
-                    "nature": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.491
-                    }
-                  },
-                  {
-                    "kind": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.476
-                    }
-                  },
-                  {
-                    "class": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.476
-                    }
-                  },
-                  {
-                    "type": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.476
-                    }
-                  },
-                  {
-                    "ilk": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.476
-                    }
-                  },
-                  {
-                    "person": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.466
-                    }
-                  },
-                  {
-                    "character": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.452
                     }
                   }
                 ]
@@ -7214,16 +7457,6 @@
                     }
                   },
                   {
-                    "payment": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.491
-                    }
-                  },
-                  {
                     "avg outlay": {
                       "Source": {
                         "Agent": "Thesaurus"
@@ -7245,6 +7478,16 @@
                   },
                   {
                     "avg cost": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "avg overhead": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
@@ -7512,6 +7755,22 @@
                   }
                 ]
               },
+              "v_A_Measures_a_measures.PY_1K_kacha": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_A Measures",
+                    "ConceptualProperty": "PY 1K Kacha"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "PY 1K kacha": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
               "v_A_Measures_a_measures.PY_AVG_production_rate": {
                 "Definition": {
                   "Binding": {
@@ -7522,98 +7781,88 @@
                 "State": "Generated",
                 "Terms": [
                   {
-                    "PY AVG production rate": {
+                    "PY AVG rate": {
                       "State": "Generated"
                     }
                   },
                   {
-                    "production rate": {
+                    "AVG rate": {
                       "State": "Generated",
                       "Weight": 0.97
                     }
                   },
                   {
-                    "py average production rate": {
+                    "py average rate": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.599
+                      "Weight": 0.591
                     }
                   },
                   {
-                    "py avg production degree": {
+                    "average rate": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.514
+                      "Weight": 0.582
                     }
                   },
                   {
-                    "py avg production frequency": {
+                    "py avg degree": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.514
+                      "Weight": 0.508
                     }
                   },
                   {
-                    "py avg production percentage": {
+                    "py avg frequency": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.514
+                      "Weight": 0.508
                     }
                   },
                   {
-                    "py avg production ratio": {
+                    "py avg percentage": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.514
+                      "Weight": 0.508
                     }
                   },
                   {
-                    "py avg production quotient": {
+                    "py avg ratio": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.514
+                      "Weight": 0.508
                     }
                   },
                   {
-                    "production degree": {
+                    "py avg quotient": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.5
+                      "Weight": 0.508
                     }
                   },
                   {
-                    "production frequency": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.5
-                    }
-                  },
-                  {
-                    "production percentage": {
+                    "avg degree": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
@@ -7623,7 +7872,17 @@
                     }
                   },
                   {
-                    "production ratio": {
+                    "avg frequency": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "avg percentage": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
@@ -7853,16 +8112,6 @@
                     }
                   },
                   {
-                    "payment": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.491
-                    }
-                  },
-                  {
                     "py outlay": {
                       "Source": {
                         "Agent": "Thesaurus"
@@ -7900,6 +8149,16 @@
                       "State": "Suggested",
                       "Type": "Noun",
                       "Weight": 0.485
+                    }
+                  },
+                  {
+                    "outlay": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
                     }
                   }
                 ]
@@ -8372,6 +8631,128 @@
                   }
                 ]
               },
+              "v_A_Measures_a_measures.PY_production_materials": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_A Measures",
+                    "ConceptualProperty": "PY Production Materials"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "PY production materials": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "materials": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "py production ingredient": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.508
+                    }
+                  },
+                  {
+                    "py production thing": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.508
+                    }
+                  },
+                  {
+                    "py production resource": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "py production supply": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "py production constituent": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "py production tackle": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "py production tool": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "py production provision": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "py production stuff": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "ingredient": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  }
+                ]
+              },
               "v_A_Measures_a_measures.PY_sales": {
                 "Definition": {
                   "Binding": {
@@ -8553,16 +8934,6 @@
                     }
                   },
                   {
-                    "payment": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.491
-                    }
-                  },
-                  {
                     "ytd outlay": {
                       "Source": {
                         "Agent": "Thesaurus"
@@ -8600,6 +8971,16 @@
                       "State": "Suggested",
                       "Type": "Noun",
                       "Weight": 0.485
+                    }
+                  },
+                  {
+                    "year to date expense": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.48
                     }
                   }
                 ]
@@ -8880,6 +9261,128 @@
                       "State": "Suggested",
                       "Type": "Noun",
                       "Weight": 0.461
+                    }
+                  }
+                ]
+              },
+              "v_A_Measures_a_measures.advance_payment": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_A Measures",
+                    "ConceptualProperty": "Advance Payment"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "advance payment": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "payment": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "advance imbursement": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "advance compensation": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "advance disbursement": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "imbursement": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "compensation": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "disbursement": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "advance sum": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "advance expense": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "advance recompense": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "advance fee": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
                     }
                   }
                 ]
@@ -9598,16 +10101,6 @@
                     }
                   },
                   {
-                    "payment": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.491
-                    }
-                  },
-                  {
                     "load outlay": {
                       "Source": {
                         "Agent": "Thesaurus"
@@ -9645,6 +10138,16 @@
                       "State": "Suggested",
                       "Type": "Noun",
                       "Weight": 0.485
+                    }
+                  },
+                  {
+                    "outlay": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
                     }
                   }
                 ]
@@ -9837,6 +10340,112 @@
                       "State": "Suggested",
                       "Type": "Noun",
                       "Weight": 0.461
+                    }
+                  }
+                ]
+              },
+              "v_A_Measures_a_measures.other_unit_sold": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_A Measures",
+                    "ConceptualProperty": "Other Unit Sold"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "other unit sold": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "other module sold": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.762
+                    }
+                  },
+                  {
+                    "other element sold": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.762
+                    }
+                  },
+                  {
+                    "other entity sold": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.762
+                    }
+                  },
+                  {
+                    "other group sold": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.739
+                    }
+                  },
+                  {
+                    "other component sold": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.739
+                    }
+                  },
+                  {
+                    "other constituent sold": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.739
+                    }
+                  },
+                  {
+                    "other item sold": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.739
+                    }
+                  },
+                  {
+                    "other part sold": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.739
+                    }
+                  },
+                  {
+                    "other section sold": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.739
                     }
                   }
                 ]
@@ -10103,6 +10712,150 @@
                   }
                 ]
               },
+              "v_A_Measures_a_measures.production_diff": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_A Measures",
+                    "ConceptualProperty": "Production Diff"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "production diff": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "diff": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  }
+                ]
+              },
+              "v_A_Measures_a_measures.production_materials": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_A Measures",
+                    "ConceptualProperty": "Production Materials"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "production materials": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "materials": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "production ingredient": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "production thing": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "ingredient": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "thing": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "production resource": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "production supply": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "production constituent": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "production tackle": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "production tool": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "production provision": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  }
+                ]
+              },
               "v_A_Measures_a_measures.profit": {
                 "Definition": {
                   "Binding": {
@@ -10261,6 +11014,38 @@
                       },
                       "State": "Suggested",
                       "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "v_A_Measures_a_measures.remaining_stock": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_A Measures",
+                    "ConceptualProperty": "Remaining Stock"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "remaining stock": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "stock": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "remaining inventory": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
                     }
                   }
                 ]
@@ -10856,16 +11641,6 @@
                     }
                   },
                   {
-                    "payment": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.491
-                    }
-                  },
-                  {
                     "total outlay": {
                       "Source": {
                         "Agent": "Thesaurus"
@@ -10877,6 +11652,16 @@
                   },
                   {
                     "total outflow": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "total cost": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
@@ -10942,6 +11727,52 @@
                       "State": "Suggested",
                       "Type": "Noun",
                       "Weight": 0.582
+                    }
+                  }
+                ]
+              },
+              "v_A_Measures_a_measures.total_sold_without_others": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_A Measures",
+                    "ConceptualProperty": "Total Sold without Others"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "total sold without others": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "aggregate sold without other": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.748
+                    }
+                  },
+                  {
+                    "overall sold without other": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.748
+                    }
+                  },
+                  {
+                    "Sold": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
                     }
                   }
                 ]
@@ -12049,6 +12880,42 @@
                     }
                   }
                 ]
+              },
+              "vata_sale.inventory_num": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Vata_Sales",
+                    "ConceptualProperty": "Inventory_Num"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "inventory num": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "Inventory_Num": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "inventory number": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  }
+                ],
+                "Visibility": {
+                  "Value": "Hidden"
+                }
               },
               "vata_sale.money_receipt_no": {
                 "Definition": {
@@ -13182,6 +14049,39 @@
                 },
                 "State": "Generated"
               },
+              "AMB_bricks_expance_sheet_has_v_A_Measures_a_measures_PY_1K_kacha": {
+                "Binding": {
+                  "ConceptualEntity": "AMB_Bricks_Expance_Sheet"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "v_A_Measures_a_measures.PY_1K_kacha"
+                      },
+                      "Subject": {
+                        "Role": "AMB_bricks_expance_sheet"
+                      }
+                    },
+                    "ID": "AMB_bricks_expance_sheets_have_PY_1K_kacha",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "AMB_bricks_expance_sheet": {
+                    "Target": {
+                      "Entity": "AMB_bricks_expance_sheet"
+                    }
+                  },
+                  "v_A_Measures_a_measures.PY_1K_kacha": {
+                    "Target": {
+                      "Entity": "v_A_Measures_a_measures.PY_1K_kacha"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "AMB_bricks_expance_sheet_has_v_A_Measures_a_measures_PY_AVG_production_rate": {
                 "Binding": {
                   "ConceptualEntity": "AMB_Bricks_Expance_Sheet"
@@ -13196,7 +14096,7 @@
                         "Role": "AMB_bricks_expance_sheet"
                       }
                     },
-                    "ID": "AMB_bricks_expance_sheets_have_PY_AVG_production_rate",
+                    "ID": "AMB_bricks_expance_sheets_have_PY_AVG_rate",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -13281,6 +14181,39 @@
                 },
                 "State": "Generated"
               },
+              "AMB_bricks_expance_sheet_has_v_A_Measures_a_measures_PY_production_materials": {
+                "Binding": {
+                  "ConceptualEntity": "AMB_Bricks_Expance_Sheet"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "v_A_Measures_a_measures.PY_production_materials"
+                      },
+                      "Subject": {
+                        "Role": "AMB_bricks_expance_sheet"
+                      }
+                    },
+                    "ID": "AMB_bricks_expance_sheets_have_PY_production_materials",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "AMB_bricks_expance_sheet": {
+                    "Target": {
+                      "Entity": "AMB_bricks_expance_sheet"
+                    }
+                  },
+                  "v_A_Measures_a_measures.PY_production_materials": {
+                    "Target": {
+                      "Entity": "v_A_Measures_a_measures.PY_production_materials"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "AMB_bricks_expance_sheet_has_v_A_Measures_a_measures_YTD_expense": {
                 "Binding": {
                   "ConceptualEntity": "AMB_Bricks_Expance_Sheet"
@@ -13342,6 +14275,39 @@
                   "v_A_Measures_a_measures.Z_Roling_AVG_expense": {
                     "Target": {
                       "Entity": "v_A_Measures_a_measures.Z_Roling_AVG_expense"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "AMB_bricks_expance_sheet_has_v_A_Measures_a_measures_advance_payment": {
+                "Binding": {
+                  "ConceptualEntity": "AMB_Bricks_Expance_Sheet"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "v_A_Measures_a_measures.advance_payment"
+                      },
+                      "Subject": {
+                        "Role": "AMB_bricks_expance_sheet"
+                      }
+                    },
+                    "ID": "AMB_bricks_expance_sheets_have_advance_payment",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "AMB_bricks_expance_sheet": {
+                    "Target": {
+                      "Entity": "AMB_bricks_expance_sheet"
+                    }
+                  },
+                  "v_A_Measures_a_measures.advance_payment": {
+                    "Target": {
+                      "Entity": "v_A_Measures_a_measures.advance_payment"
                     }
                   }
                 },
@@ -13666,6 +14632,39 @@
                   "v_A_Measures_a_measures.per_1K_unload": {
                     "Target": {
                       "Entity": "v_A_Measures_a_measures.per_1K_unload"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "AMB_bricks_expance_sheet_has_v_A_Measures_a_measures_production_materials": {
+                "Binding": {
+                  "ConceptualEntity": "AMB_Bricks_Expance_Sheet"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "v_A_Measures_a_measures.production_materials"
+                      },
+                      "Subject": {
+                        "Role": "AMB_bricks_expance_sheet"
+                      }
+                    },
+                    "ID": "AMB_bricks_expance_sheets_have_production_materials",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "AMB_bricks_expance_sheet": {
+                    "Target": {
+                      "Entity": "AMB_bricks_expance_sheet"
+                    }
+                  },
+                  "v_A_Measures_a_measures.production_materials": {
+                    "Target": {
+                      "Entity": "v_A_Measures_a_measures.production_materials"
                     }
                   }
                 },
@@ -14678,6 +15677,72 @@
                 },
                 "State": "Generated"
               },
+              "inventory_num_has_inventory_name": {
+                "Binding": {
+                  "ConceptualEntity": "Inventory_Num"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "inventory_num.inventory_name"
+                      },
+                      "Subject": {
+                        "Role": "inventory_num"
+                      }
+                    },
+                    "ID": "inventory_nums_have_inventory_names",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "inventory_num": {
+                    "Target": {
+                      "Entity": "inventory_num"
+                    }
+                  },
+                  "inventory_num.inventory_name": {
+                    "Target": {
+                      "Entity": "inventory_num.inventory_name"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "inventory_num_has_inventory_short": {
+                "Binding": {
+                  "ConceptualEntity": "Inventory_Num"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "inventory_num.inventory_short"
+                      },
+                      "Subject": {
+                        "Role": "inventory_num"
+                      }
+                    },
+                    "ID": "inventory_nums_have_inventory_shorts",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "inventory_num": {
+                    "Target": {
+                      "Entity": "inventory_num"
+                    }
+                  },
+                  "inventory_num.inventory_short": {
+                    "Target": {
+                      "Entity": "inventory_num.inventory_short"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "kacha_load_sheet_has_SD_name": {
                 "Binding": {
                   "ConceptualEntity": "Kacha_Load_Sheet"
@@ -14897,6 +15962,39 @@
                   "kacha_load_sheet.remark": {
                     "Target": {
                       "Entity": "kacha_load_sheet.remark"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "kacha_load_sheet_has_v_A_Measures_a_measures_PY_1K_kacha": {
+                "Binding": {
+                  "ConceptualEntity": "Kacha_Load_Sheet"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "v_A_Measures_a_measures.PY_1K_kacha"
+                      },
+                      "Subject": {
+                        "Role": "kacha_load_sheet"
+                      }
+                    },
+                    "ID": "kacha_load_sheets_have_PY_1K_kacha",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "kacha_load_sheet": {
+                    "Target": {
+                      "Entity": "kacha_load_sheet"
+                    }
+                  },
+                  "v_A_Measures_a_measures.PY_1K_kacha": {
+                    "Target": {
+                      "Entity": "v_A_Measures_a_measures.PY_1K_kacha"
                     }
                   }
                 },
@@ -15293,6 +16391,39 @@
                   "new_date.date": {
                     "Target": {
                       "Entity": "new_date.date"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "new_date_has_first_day_of_month": {
+                "Binding": {
+                  "ConceptualEntity": "New_date"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "new_date.first_day_of_month"
+                      },
+                      "Subject": {
+                        "Role": "new_date"
+                      }
+                    },
+                    "ID": "new_dates_have_first_day_of_month",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "new_date": {
+                    "Target": {
+                      "Entity": "new_date"
+                    }
+                  },
+                  "new_date.first_day_of_month": {
+                    "Target": {
+                      "Entity": "new_date.first_day_of_month"
                     }
                   }
                 },
@@ -15983,6 +17114,52 @@
                 },
                 "State": "Generated"
               },
+              "unload_table_has_inventory_num": {
+                "Binding": {
+                  "ConceptualEntity": "Unload_table"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "inventory_num"
+                      },
+                      "Subject": {
+                        "Role": "unload_table"
+                      }
+                    },
+                    "ID": "unload_table_have_inventory_nums",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "unload_table"
+                      },
+                      "Subject": {
+                        "Role": "inventory_num"
+                      }
+                    },
+                    "ID": "inventory_nums_have_unload_table",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "inventory_num": {
+                    "Target": {
+                      "Entity": "inventory_num"
+                    }
+                  },
+                  "unload_table": {
+                    "Target": {
+                      "Entity": "unload_table"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "unload_table_has_new_date": {
                 "Binding": {
                   "ConceptualEntity": "Unload_table"
@@ -16062,39 +17239,6 @@
                 },
                 "State": "Generated"
               },
-              "unload_table_has_sort": {
-                "Binding": {
-                  "ConceptualEntity": "Unload_table"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "unload_table.sort"
-                      },
-                      "Subject": {
-                        "Role": "unload_table"
-                      }
-                    },
-                    "ID": "unload_table_have_sorts",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "unload_table": {
-                    "Target": {
-                      "Entity": "unload_table"
-                    }
-                  },
-                  "unload_table.sort": {
-                    "Target": {
-                      "Entity": "unload_table.sort"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
               "unload_table_has_v_A_Measures_a_measures_AVG_production_rate": {
                 "Binding": {
                   "ConceptualEntity": "Unload_table"
@@ -16142,7 +17286,7 @@
                         "Role": "unload_table"
                       }
                     },
-                    "ID": "unload_table_have_PY_AVG_production_rate",
+                    "ID": "unload_table_have_PY_AVG_rate",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -16326,6 +17470,39 @@
                 },
                 "State": "Generated"
               },
+              "unload_table_has_v_A_Measures_a_measures_production_diff": {
+                "Binding": {
+                  "ConceptualEntity": "Unload_table"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "v_A_Measures_a_measures.production_diff"
+                      },
+                      "Subject": {
+                        "Role": "unload_table"
+                      }
+                    },
+                    "ID": "unload_table_have_production_diff",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "unload_table": {
+                    "Target": {
+                      "Entity": "unload_table"
+                    }
+                  },
+                  "v_A_Measures_a_measures.production_diff": {
+                    "Target": {
+                      "Entity": "v_A_Measures_a_measures.production_diff"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "unload_table_has_v_A_Measures_a_measures_py_f_p_": {
                 "Binding": {
                   "ConceptualEntity": "Unload_table"
@@ -16354,6 +17531,39 @@
                   "v_A_Measures_a_measures.py_f_p_": {
                     "Target": {
                       "Entity": "v_A_Measures_a_measures.py_f_p_"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "unload_table_has_v_A_Measures_a_measures_remaining_stock": {
+                "Binding": {
+                  "ConceptualEntity": "Unload_table"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "v_A_Measures_a_measures.remaining_stock"
+                      },
+                      "Subject": {
+                        "Role": "unload_table"
+                      }
+                    },
+                    "ID": "unload_table_have_remaining_stock",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "unload_table": {
+                    "Target": {
+                      "Entity": "unload_table"
+                    }
+                  },
+                  "v_A_Measures_a_measures.remaining_stock": {
+                    "Target": {
+                      "Entity": "v_A_Measures_a_measures.remaining_stock"
                     }
                   }
                 },
@@ -16783,6 +17993,52 @@
                   "vata_sale.final_price": {
                     "Target": {
                       "Entity": "vata_sale.final_price"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "vata_sale_has_inventory_num": {
+                "Binding": {
+                  "ConceptualEntity": "Vata_Sales"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "inventory_num"
+                      },
+                      "Subject": {
+                        "Role": "vata_sale"
+                      }
+                    },
+                    "ID": "vata_sales_have_inventory_nums",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "vata_sale"
+                      },
+                      "Subject": {
+                        "Role": "inventory_num"
+                      }
+                    },
+                    "ID": "inventory_nums_have_vata_sales",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "inventory_num": {
+                    "Target": {
+                      "Entity": "inventory_num"
+                    }
+                  },
+                  "vata_sale": {
+                    "Target": {
+                      "Entity": "vata_sale"
                     }
                   }
                 },
@@ -17290,6 +18546,39 @@
                 },
                 "State": "Generated"
               },
+              "vata_sale_has_v_A_Measures_a_measures_other_unit_sold": {
+                "Binding": {
+                  "ConceptualEntity": "Vata_Sales"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "v_A_Measures_a_measures.other_unit_sold"
+                      },
+                      "Subject": {
+                        "Role": "vata_sale"
+                      }
+                    },
+                    "ID": "vata_sales_have_other_unit_sold",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "v_A_Measures_a_measures.other_unit_sold": {
+                    "Target": {
+                      "Entity": "v_A_Measures_a_measures.other_unit_sold"
+                    }
+                  },
+                  "vata_sale": {
+                    "Target": {
+                      "Entity": "vata_sale"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "vata_sale_has_v_A_Measures_a_measures_profit": {
                 "Binding": {
                   "ConceptualEntity": "Vata_Sales"
@@ -17313,6 +18602,39 @@
                   "v_A_Measures_a_measures.profit": {
                     "Target": {
                       "Entity": "v_A_Measures_a_measures.profit"
+                    }
+                  },
+                  "vata_sale": {
+                    "Target": {
+                      "Entity": "vata_sale"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "vata_sale_has_v_A_Measures_a_measures_remaining_stock": {
+                "Binding": {
+                  "ConceptualEntity": "Vata_Sales"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "v_A_Measures_a_measures.remaining_stock"
+                      },
+                      "Subject": {
+                        "Role": "vata_sale"
+                      }
+                    },
+                    "ID": "vata_sales_have_remaining_stock",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "v_A_Measures_a_measures.remaining_stock": {
+                    "Target": {
+                      "Entity": "v_A_Measures_a_measures.remaining_stock"
                     }
                   },
                   "vata_sale": {
@@ -17412,6 +18734,39 @@
                   "v_A_Measures_a_measures.total_sales": {
                     "Target": {
                       "Entity": "v_A_Measures_a_measures.total_sales"
+                    }
+                  },
+                  "vata_sale": {
+                    "Target": {
+                      "Entity": "vata_sale"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "vata_sale_has_v_A_Measures_a_measures_total_sold_without_others": {
+                "Binding": {
+                  "ConceptualEntity": "Vata_Sales"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "v_A_Measures_a_measures.total_sold_without_others"
+                      },
+                      "Subject": {
+                        "Role": "vata_sale"
+                      }
+                    },
+                    "ID": "vata_sales_have_total_sold_without_others",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "v_A_Measures_a_measures.total_sold_without_others": {
+                    "Target": {
+                      "Entity": "v_A_Measures_a_measures.total_sold_without_others"
                     }
                   },
                   "vata_sale": {
@@ -17605,6 +18960,20 @@
         "fromTable": "AMB_Bricks_Expance_Sheet",
         "toColumn": "SD Name",
         "toTable": "SD_Name"
+      },
+      {
+        "name": "f80b1131-4ed1-4c5e-a8ff-e802202c2268",
+        "fromColumn": "Inventory_Num",
+        "fromTable": "Vata_Sales",
+        "toColumn": "InventoryShort",
+        "toTable": "Inventory_Num"
+      },
+      {
+        "name": "458ad164-a423-05cc-6114-1733092bca95",
+        "fromColumn": "Inventory_Num",
+        "fromTable": "Unload_table",
+        "toColumn": "InventoryShort",
+        "toTable": "Inventory_Num"
       }
     ],
     "sourceQueryCulture": "en-US",
@@ -18070,7 +19439,7 @@
             ],
             "dataType": "string",
             "lineageTag": "939bc138-40a5-41cc-9537-9efc7b1e5021",
-            "sortByColumn": "Sort",
+            "sortByColumn": "Inventory_Num",
             "sourceColumn": "Product Category",
             "summarizeBy": "none"
           },
@@ -18089,7 +19458,7 @@
             "summarizeBy": "sum"
           },
           {
-            "name": "Sort",
+            "name": "Inventory_Num",
             "annotations": [
               {
                 "name": "SummarizationSetBy",
@@ -18101,9 +19470,9 @@
               }
             ],
             "dataType": "double",
-            "lineageTag": "c9b461ee-139c-403b-b063-a6120395230e",
-            "sourceColumn": "Sort",
-            "summarizeBy": "sum"
+            "lineageTag": "d3aa947b-5568-4090-9dbd-6c2e38a902b8",
+            "sourceColumn": "Inventory_Num",
+            "summarizeBy": "none"
           }
         ],
         "lineageTag": "8a679aef-f85b-4f34-8d8a-a8c860719bc2",
@@ -18116,18 +19485,17 @@
                 "let",
                 "    Source = Excel.Workbook(File.Contents(\"H:\\_Portfolio Project Github\\BrickField-Sales-Cost-Tracking-Dashboard\\AMB_Vata23_24.xlsx\"), null, true),",
                 "    Uuload_table_Table = Source{[Item=\"Unload_table\",Kind=\"Table\"]}[Data],",
-                "    #\"Changed Type\" = Table.TransformColumnTypes(Uuload_table_Table,{{\"Date\", type date}, {\"Sardar_Name\", type text}, {\"No_1\", Int64.Type}, {\"Picket\", Int64.Type}, {\"No_2\", Int64.Type}, {\"Kara\", Int64.Type}, {\"Goyra\", Int64.Type}, {\"No_3\", Int64.Type}, {\"Total\", Int64.Type}}),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(Uuload_table_Table,{{\"Date\", type date}, {\"Sardar_Name\", type text}, {\"1no\", Int64.Type}, {\"Picket\", Int64.Type}, {\"2no\", Int64.Type}, {\"Kara\", Int64.Type}, {\"Goyra\", Int64.Type}, {\"3no\", Int64.Type}, {\"Total\", Int64.Type}}),",
                 "    #\"Filtered Rows\" = Table.SelectRows(#\"Changed Type\", each ([Sardar_Name] <> null)),",
                 "    #\"Removed Columns\" = Table.RemoveColumns(#\"Filtered Rows\",{\"Total\"}),",
                 "    #\"Unpivoted Other Columns\" = Table.UnpivotOtherColumns(#\"Removed Columns\", {\"Date\", \"Sardar_Name\"}, \"Attribute\", \"Value\"),",
                 "    #\"Filtered Rows1\" = Table.SelectRows(#\"Unpivoted Other Columns\", each ([Value] <> 0)),",
                 "    #\"Changed Type1\" = Table.TransformColumnTypes(#\"Filtered Rows1\",{{\"Date\", type date}}),",
                 "    #\"Renamed Columns\" = Table.RenameColumns(#\"Changed Type1\",{{\"Attribute\", \"Product Category\"}}),",
-                "    #\"Added Conditional Column\" = Table.AddColumn(#\"Renamed Columns\", \"Custom\", each if [Product Category] = \"No_1\" then 1 else if [Product Category] = \"Picket\" then 2 else if [Product Category] = \"No_2\" then 3 else if [Product Category] = \"Kara\" then 4 else if [Product Category] = \"No_3\" then 5 else if [Product Category] = \"Goyra\" then 6 else null, type number),",
-                "    #\"Filtered Rows2\" = Table.SelectRows(#\"Added Conditional Column\", each true),",
-                "    #\"Renamed Columns1\" = Table.RenameColumns(#\"Filtered Rows2\",{{\"Custom\", \"Sort\"}})",
+                "    #\"Added Conditional Column\" = Table.AddColumn(#\"Renamed Columns\", \"Inventory_Num\", each if [Product Category] = \"1no\" then 1 else if [Product Category] = \"Picket\" then 2 else if [Product Category] = \"2no\" then 3 else if [Product Category] = \"Kara\" then 4 else if [Product Category] = \"3no\" then 5 else if [Product Category] = \"Goyra\" then 6 else null, type number),",
+                "    #\"Filtered Rows2\" = Table.SelectRows(#\"Added Conditional Column\", each true)",
                 "in",
-                "    #\"Renamed Columns1\""
+                "    #\"Filtered Rows2\""
               ],
               "type": "m"
             }
@@ -18372,6 +19740,20 @@
             "lineageTag": "56a45cf4-e125-4578-91af-e120d8476a8a",
             "sourceColumn": "Sort",
             "summarizeBy": "none"
+          },
+          {
+            "name": "Inventory_Num",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "52810a04-6599-45a8-afeb-1aea72384b0a",
+            "sourceColumn": "Inventory_Num",
+            "summarizeBy": "none"
           }
         ],
         "lineageTag": "6813c15b-261d-4eeb-9c78-eb1fd25f2182",
@@ -18386,7 +19768,7 @@
                 "    Vata_Sales_Table = Source{[Item=\"Vata_Sales\",Kind=\"Table\"]}[Data],",
                 "    #\"Changed Type\" = Table.TransformColumnTypes(Vata_Sales_Table,{{\"Money Receipt No\", Int64.Type}, {\"Date\", type date}, {\"Address\", type text}, {\"Product Name\", type text}, {\"Ref Unit\", type text}, {\"Quantity\", Int64.Type}, {\"Rate\", type number}, {\"Actual Rate\", type number}, {\"Actual Quantity\", Int64.Type}, {\"Price\", type number}, {\"Discount\", Int64.Type}, {\"Final Price\", type number}, {\"Remarks\", type any}, {\"Category\", type text}}),",
                 "    #\"Trimmed Text\" = Table.TransformColumns(#\"Changed Type\",{{\"Product Name\", Text.Trim, type text}}),",
-                "    #\"Changed Type1\" = Table.TransformColumnTypes(#\"Trimmed Text\",{{\"Date\", type date}})",
+                "    #\"Changed Type1\" = Table.TransformColumnTypes(#\"Trimmed Text\",{{\"Date\", type date}, {\"Inventory_Num\", Int64.Type}})",
                 "in",
                 "    #\"Changed Type1\""
               ],
@@ -19789,6 +21171,24 @@
             ],
             "formatString": "0",
             "lineageTag": "aac5d1ea-6131-4d6d-87c9-3f9f9c1f4ea5"
+          },
+          {
+            "name": "Remaining Stock",
+            "expression": "[Final Production] -  [Total Sold without Others]",
+            "formatString": "#,0",
+            "lineageTag": "6a098be8-7dfc-4f04-95c8-0a8a1a14aaf9"
+          },
+          {
+            "name": "Total Sold without Others",
+            "expression": "CALCULATE([Total Unit Sold], FILTER(Inventory_Num, Inventory_Num[InventoryShort]<>7))",
+            "formatString": "#,0",
+            "lineageTag": "a3f2d56e-6052-4e42-905e-47c2822cce67"
+          },
+          {
+            "name": "Other Unit Sold",
+            "expression": "CALCULATE([Total Unit Sold], Vata_Sales[Inventory_Num]=7)",
+            "formatString": "0",
+            "lineageTag": "28db2b14-07a7-4d6d-a8c9-ec418a803322"
           }
         ],
         "partitions": [
@@ -20210,6 +21610,68 @@
                 "    #\"Removed Duplicates\" = Table.Distinct(#\"Trimmed Text\")",
                 "in",
                 "    #\"Removed Duplicates\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Inventory_Num",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "InventoryName",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "SortByColumn"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "4282e680-78a2-4b8f-b1ec-efea8faa8542",
+            "sortByColumn": "InventoryShort",
+            "sourceColumn": "InventoryName",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "InventoryShort",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "880848d7-7644-46df-b40e-ae0816cff1a9",
+            "sourceColumn": "InventoryShort",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "b9866e17-6291-4ef9-b3e3-0b1555df7135",
+        "partitions": [
+          {
+            "name": "Inventory_Num",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Excel.Workbook(File.Contents(\"H:\\_Portfolio Project Github\\BrickField-Sales-Cost-Tracking-Dashboard\\AMB_Vata23_24.xlsx\"), null, true),",
+                "    Inventory_Num_Table = Source{[Item=\"Inventory_Num\",Kind=\"Table\"]}[Data],",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(Inventory_Num_Table,{{\"InventoryName\", type text}, {\"InventoryShort\", Int64.Type}})",
+                "in",
+                "    #\"Changed Type\""
               ],
               "type": "m"
             }

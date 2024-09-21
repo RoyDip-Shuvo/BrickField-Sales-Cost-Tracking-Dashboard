@@ -4,8 +4,8 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 454.46547242569613,
-        "y": 74.69465680366153
+        "x": 869.35899250014836,
+        "y": 0
       },
       "nodes": [
         {
@@ -68,7 +68,7 @@
           "nodeIndex": "Unload_table",
           "nodeLineageTag": "8a679aef-f85b-4f34-8d8a-a8c860719bc2",
           "size": {
-            "height": 176,
+            "height": 222.50976749423546,
             "width": 234
           },
           "zIndex": 7
@@ -162,10 +162,23 @@
             "width": 234
           },
           "zIndex": 12
+        },
+        {
+          "location": {
+            "x": 1445.0909777871993,
+            "y": 224.50494943584806
+          },
+          "nodeIndex": "Inventory_Num",
+          "nodeLineageTag": "b9866e17-6291-4ef9-b3e3-0b1555df7135",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
         }
       ],
       "name": "All tables",
-      "zoomValue": 70.955543900968749,
+      "zoomValue": 79.553182037699742,
       "pinKeyFieldsToTop": false,
       "showExtraHeaderInfo": false,
       "hideKeyFieldsWhenCollapsed": false,
