@@ -4,7 +4,7 @@
     "annotations": [
       {
         "name": "PBIDesktopVersion",
-        "value": "2.135.7627.0 (24.08)"
+        "value": "2.136.1202.0 (24.09)"
       },
       {
         "name": "PBI_QueryOrder",
@@ -21189,6 +21189,23 @@
             "expression": "CALCULATE([Total Unit Sold], Vata_Sales[Inventory_Num]=7)",
             "formatString": "0",
             "lineageTag": "28db2b14-07a7-4d6d-a8c9-ec418a803322"
+          },
+          {
+            "name": "Profit Target",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": "[Total Expense]*.25",
+            "lineageTag": "60bf4ae4-7301-4902-9b44-346060c3262e"
+          },
+          {
+            "name": "Profit Max",
+            "expression": "15000000",
+            "formatString": "0",
+            "lineageTag": "1722e6e8-3824-4395-af32-aa63a3dceb22"
           }
         ],
         "partitions": [
