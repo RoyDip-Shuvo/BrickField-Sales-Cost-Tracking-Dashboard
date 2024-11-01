@@ -5,7 +5,7 @@ This project focuses on the development of a comprehensive dashboard for monitor
 
 </br>
 
-[Live Dashboard](https://app.powerbi.com/view?r=eyJrIjoiMDNlZWVlMTQtZWYzMC00Yjk0LWFhZWMtZmJiMjA0OWVhNzY2IiwidCI6IjZjNjQzNDA5LWU3N2MtNDc0ZC1iYjJlLTI2YjAyYWY3ZGIwZiIsImMiOjEwfQ%3D%3D)
+[Live Dashboard](https://app.powerbi.com/view?r=eyJrIjoiZDM1NjU1MTItNTFlZS00MjU5LTg0YzktYjJkOTUzZDU2YzdhIiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9)
 
 </br>
 </br>
