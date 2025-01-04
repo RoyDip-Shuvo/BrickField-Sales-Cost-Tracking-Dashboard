@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "BrickField_report_24_25"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "e667dacb-ccfa-4d4d-854a-896995c57175"
+  }
+}

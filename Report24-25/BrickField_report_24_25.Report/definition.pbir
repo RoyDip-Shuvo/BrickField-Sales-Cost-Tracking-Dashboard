@@ -1,0 +1,9 @@
+{
+  "version": "4.0",
+  "datasetReference": {
+    "byPath": {
+      "path": "../BrickField_report_24_25.SemanticModel"
+    },
+    "byConnection": null
+  }
+}
