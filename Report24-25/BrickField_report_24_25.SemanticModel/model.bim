@@ -20868,6 +20868,12 @@
           },
           {
             "name": "Coal_Qty (Ton)",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isDecimal\":true}"
+              }
+            ],
             "expression": "CALCULATE(SUM(AMB_Bricks_Expance_Sheet[Quantity]),AMB_Bricks_Expance_Sheet[Sub_Head]=\"Coal\")",
             "formatString": "0",
             "lineageTag": "2adf2ac1-1276-4298-a391-d9640dfd1424"
